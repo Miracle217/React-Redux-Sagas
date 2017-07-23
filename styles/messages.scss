@@ -1,0 +1,162 @@
+// alerts
+@import "config.scss";
+
+/* line 112, ../bower_components/foundation/scss/foundation/components/_alert-boxes.scss */
+.alert-box {
+  border-style: solid;
+  border-width: 0;
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: normal;
+  margin-bottom: 1.25rem;
+  padding: 0.875rem 1.5rem 0.875rem 0.875rem;
+  position: relative;
+  transition: opacity 300ms ease-out;
+  background-color: $darkaccent;
+  color: #FFFFFF;
+}
+/* line 115, ../bower_components/foundation/scss/foundation/components/_alert-boxes.scss */
+.alert-box .close {
+  right: 0.25rem;
+  background: inherit;
+  color: #fff;
+  font-size: 1.375rem;
+  line-height: .9;
+  margin-top: -0.6875rem;
+  opacity: 0.3;
+  padding: 0 6px 4px;
+  position: absolute;
+  top: 50%;
+}
+/* line 96, ../bower_components/foundation/scss/foundation/components/_alert-boxes.scss */
+.alert-box .close:hover, .alert-box .close:focus {
+  opacity: 0.5;
+}
+/* line 117, ../bower_components/foundation/scss/foundation/components/_alert-boxes.scss */
+.alert-box.radius {
+  border-radius: 3px;
+}
+/* line 118, ../bower_components/foundation/scss/foundation/components/_alert-boxes.scss */
+.alert-box.round {
+  border-radius: 1000px;
+}
+/* line 120, ../bower_components/foundation/scss/foundation/components/_alert-boxes.scss */
+.alert-box.success {
+  background-color: $darkaccent;
+  color: #FFFFFF;
+}
+/* line 121, ../bower_components/foundation/scss/foundation/components/_alert-boxes.scss */
+.alert-box.alert {
+  background-color: $accentred;
+  color: #FFFFFF;
+}
+/* line 122, ../bower_components/foundation/scss/foundation/components/_alert-boxes.scss */
+.alert-box.secondary {
+  background-color: #921a68;
+  border-color: #7e1659;
+  color: #FFFFFF;
+}
+/* line 123, ../bower_components/foundation/scss/foundation/components/_alert-boxes.scss */
+.alert-box.warning {
+  background-color: #f08a24;
+  border-color: #de770f;
+  color: #FFFFFF;
+}
+/* line 124, ../bower_components/foundation/scss/foundation/components/_alert-boxes.scss */
+.alert-box.info {
+  background-color: #a0d3e8;
+  border-color: #74bfdd;
+  color: #320923;
+}
+/* line 125, ../bower_components/foundation/scss/foundation/components/_alert-boxes.scss */
+.alert-box.alert-close {
+  opacity: 0;
+}
+
+.form-container .alert {
+	@extend .alert-box !optional;
+	@extend .medium-9 !optional;
+	@extend .columns !optional;
+	@extend .centered !optional;
+}
+
+.loading {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: $primarybackground;
+	z-index: 1000;
+	opacity: 0.8;
+	transition: opacity 1s ease-in-out;
+   -moz-transition: opacity 1s ease-in-out;
+   -webkit-transition: opacity 1s ease-in-out;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+	
+}
+
+.spinner {
+  font-size: 10px;
+  // margin: 30% auto;
+  text-indent: -9999em;
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  background: $darkPurple;
+  background: -moz-linear-gradient(left, $darkPurple 10%, rgba($darkPurple, 0) 42%);
+  background: -webkit-linear-gradient(left, $darkPurple 10%, rgba($darkPurple, 0) 42%);
+  background: -o-linear-gradient(left, $darkPurple 10%, rgba($darkPurple, 0) 42%);
+  background: -ms-linear-gradient(left, $darkPurple 10%, rgba($darkPurple, 0) 42%);
+  background: linear-gradient(to right, $darkPurple 10%, rgba($darkPurple, 0) 42%);
+  position: relative;
+  -webkit-animation: load3 1.4s infinite linear;
+  animation: load3 1.4s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.spinner:before {
+  width: 50%;
+  height: 50%;
+  background: $darkPurple;
+  border-radius: 100% 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+}
+.spinner:after {
+  background: $primarybackground;
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  content: '';
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+@-webkit-keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

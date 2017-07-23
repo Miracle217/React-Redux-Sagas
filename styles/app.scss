@@ -1,0 +1,608 @@
+/* line 49, ../scss/app.scss */
+.dz-default {
+  position: relative;
+}
+/* line 53, ../scss/app.scss */
+.xdebug-var-dump, .cake-error {
+  background: white;
+  color: black;
+}
+/* line 59, ../scss/app.scss */
+.input-error-below div label small.error {
+  position: relative;
+}
+/* line 64, ../scss/app.scss */
+.no-margin {
+  margin-bottom: 0;
+}
+// /* line 68, ../scss/app.scss */
+// .top-nav-bar {
+//   margin-bottom: 5%;
+// }
+/* dashboard alert message area */
+/* line 73, ../scss/app.scss */
+.close {
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  background: #ffffff;
+  color: #921a68;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: 0;
+}
+/* line 86, ../scss/app.scss */
+#flashMessage,
+.flashMessage {
+  font-size: 1.8em;
+  font-weight: bold;
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 4%;
+  margin-bottom: 5%;
+}
+/* line 94, ../scss/app.scss */
+.alert-message {
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 4%;
+  margin-bottom: 5%;
+}
+/* line 100, ../scss/app.scss */
+.dash-head {
+  margin-top: 2%;
+  margin-bottom: 4%;
+}
+/* line 104, ../scss/app.scss */
+.dash-head p.username {
+  margin-bottom: 0;
+}
+/* line 109, ../scss/app.scss */
+.dash-head i {
+  width: 30px;
+  color: #E8E8E8;
+}
+/* line 115, ../scss/app.scss */
+.dash-head li a {
+  color: black;
+}
+/* line 120, ../scss/app.scss */
+.dash-head .synced {
+  color: #124d88;
+}
+/* line 124, ../scss/app.scss */
+.dash-head.seller {
+  margin-bottom: 0;
+}
+/* line 129, ../scss/app.scss */
+.fa-pencil,
+.fa-print {
+  color: #124d88;
+}
+/* line 134, ../scss/app.scss */
+.dash-post {
+  margin-top: 40px !important;
+}
+/* line 138, ../scss/app.scss */
+.dash-post-button {
+  margin-top: 0 !important;
+  margin-bottom: 15%;
+}
+/* line 144, ../scss/app.scss */
+.list li {
+  list-style: none;
+}
+/* line 148, ../scss/app.scss */
+.list .label-text {
+  display: none;
+}
+/* line 153, ../scss/app.scss */
+.product-labels {
+  border-bottom: 1px solid #e1e1e1;
+}
+/* line 158, ../scss/app.scss */
+.listed-product {
+  border-bottom: 1px solid #e1e1e1;
+  padding-top: 5%;
+}
+/* line 161, ../scss/app.scss */
+.listed-product.last {
+  border-bottom: none;
+}
+/* line 164, ../scss/app.scss */
+.listed-product h3 {
+  margin-bottom: 0;
+}
+/* line 168, ../scss/app.scss */
+.listed-product.first-land img {
+  margin-bottom: 30px;
+}
+/* line 173, ../scss/app.scss */
+.listed-product.single {
+  border-bottom: none;
+  padding-top: 2%;
+}
+/* line 181, ../scss/app.scss */
+.listed-thumb img {
+  border: 1px solid #efefef;
+}
+/* line 186, ../scss/app.scss */
+.product-thumb {
+  margin-top: 30px;
+}
+/* line 191, ../scss/app.scss */
+.upload-thumb img {
+  -o-transition: .3s;
+  -ms-transition: .3s;
+  -moz-transition: .3s;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+/* line 197, ../scss/app.scss */
+.upload-thumb img:hover {
+  opacity: .5;
+}
+/* spacer between input sections */
+/* line 204, ../scss/app.scss */
+.input-section-head {
+  margin-top: 15px;
+}
+/* line 208, ../scss/app.scss */
+.outer-footer {
+  background: #921a68;
+  margin-top: 7%;
+}
+/* line 213, ../scss/app.scss */
+.footer-nav {
+  display: inline-block;
+  float: none;
+  color: #ffffff;
+  margin-bottom: 0;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  margin-left: 0;
+}
+/* line 221, ../scss/app.scss */
+.footer-nav li {
+  margin-left: 5.375rem;
+}
+/* line 223, ../scss/app.scss */
+.footer-nav li:first-of-type {
+  margin-left: 0;
+}
+/* BUTTON STYLES */
+/* line 231, ../scss/app.scss */
+.button.proceed {
+  background: #4bcdeb;
+}
+/* line 236, ../scss/app.scss */
+.button i.fa-twitter {
+  position: absolute;
+  left: 15px;
+  font-size: 30px;
+  top: 11px;
+}
+/* line 245, ../scss/app.scss */
+.pending-success {
+  background: #e1e1e1;
+}
+/* line 247, ../scss/app.scss */
+.pending-success:hover {
+  background: #d7d7d7;
+}
+/* line 253, ../scss/app.scss */
+.close-button h1 {
+  color: #f6675c;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+/* line 260, ../scss/app.scss */
+.close-button h1:hover {
+  color: #ff7b70;
+}
+/* line 266, ../scss/app.scss */
+.print-button {
+  text-align: right;
+}
+/* line 269, ../scss/app.scss */
+.print-button i {
+  margin-right: 10px;
+}
+/* line 275, ../scss/app.scss */
+.export-button {
+  color: #124d88;
+}
+/* line 277, ../scss/app.scss */
+.export-button p {
+  float: right;
+  margin-bottom: 0;
+  padding-top: 9px;
+}
+/* line 283, ../scss/app.scss */
+.export-button .fa-download {
+  float: right;
+  padding-top: 13px;
+}
+/* line 291, ../scss/app.scss */
+.product-list .listed-product:last-of-type {
+  border-bottom: none;
+}
+/* line 297, ../scss/app.scss */
+.social-login {
+  padding:  0;
+}
+// #UserLoginForm input[type="text"], #UserLoginForm input[type="password"] {
+//   height: 80px;
+// }
+#UserLoginForm label:last-of-type input {
+  border-top: 0 !important;
+}
+.form-button {
+  width: 100%;
+}
+/* line 299, ../scss/app.scss */
+.social-login {
+  background-color: white !important;
+  margin-bottom: 1em;
+}
+/* line 302, ../scss/app.scss */
+.social-login h3 {
+  color: #e1e1e1 !important;
+  font-weight: 400;
+  text-align: center;
+}
+/* line 317, ../scss/app.scss */
+.social-link-container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 322, ../scss/app.scss */
+.social-link {
+  display: inline-block;
+  height: 2.5em;
+  width: 2.5em;
+  margin-right: 1em;
+  background-repeat: no-repeat;
+  background-position: center 50%;
+}
+/* line 328, ../scss/app.scss */
+.social-link:last-child {
+  margin-right: 0;
+}
+/* line 331, ../scss/app.scss */
+.social-link:hover {
+  background-color: #fbfbfb;
+}
+/* line 336, ../scss/app.scss */
+.social-link.social-link-fb {
+  background-image: url("../images/icon-fb-small.png");
+}
+@media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+  /* line 336, ../scss/app.scss */
+  .social-link.social-link-fb {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url("../images/icon-fb-small@2x.png");
+    background-size: 25px 25px;
+  }
+}
+/* line 340, ../scss/app.scss */
+.social-link.social-link-twitter {
+  background-image: url("../images/icon-twitter.png");
+}
+@media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+  /* line 340, ../scss/app.scss */
+  .social-link.social-link-twitter {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url("../images/icon-twitter@2x.png");
+    background-size: 25px 25px;
+  }
+}
+/* line 344, ../scss/app.scss */
+.social-link.social-link-instagram {
+  background-image: url("../images/icon-instagram.png");
+}
+@media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+  /* line 344, ../scss/app.scss */
+  .social-link.social-link-instagram {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url("../images/icon-instagram@2x.png");
+    background-size: 25px 25px;
+  }
+}
+/* line 352, ../scss/app.scss */
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+  float: none !important;
+}
+/* iPHONE AND iPAD */
+@media (max-width: 640px) {
+  /* line 366, ../scss/app.scss */
+  h3 {
+    font-size: 1em;
+  }
+  /* Dashboard */
+  /* line 371, ../scss/app.scss */
+  .dash-head {
+    border-bottom: 4px solid #e1e1e1;
+    padding: 0 0 30px 0;
+    margin-bottom: 0;
+  }
+  /* line 375, ../scss/app.scss */
+  .dash-head .profile-image {
+    margin-top: 0.3rem;
+  }
+  /* line 379, ../scss/app.scss */
+  .dash-head .list {
+    margin-top: 1rem;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  /* line 383, ../scss/app.scss */
+  .dash-head .list li {
+    float: left;
+  }
+  /* line 388, ../scss/app.scss */
+  .social-login, .social-login .columns {
+    padding: 0;
+  }
+  /* line 392, ../scss/app.scss */
+  .listed-product {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  /* line 396, ../scss/app.scss */
+  .listed-product.single {
+    padding-top: 0;
+  }
+  /* line 400, ../scss/app.scss */
+  .listed-product h6 {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  /* line 405, ../scss/app.scss */
+  .listed-product img {
+    margin-bottom: 15px;
+    padding-left: 0;
+  }
+  /* line 413, ../scss/app.scss */
+  .listed-product .inner-content .item-detail p {
+    margin-bottom: 0;
+  }
+  /* line 418, ../scss/app.scss */
+  .listed-product .inner-content .listed-thumb {
+    margin-top: 5px;
+  }
+  /* line 425, ../scss/app.scss */
+  .product-labels {
+    display: none;
+  }
+  /* line 429, ../scss/app.scss */
+  .print-button {
+    text-align: left;
+    margin-top: 10px;
+  }
+  /* line 434, ../scss/app.scss */
+  .buyer-name {
+    margin-bottom: 10px;
+  }
+  /* line 439, ../scss/app.scss */
+  .buyer-source p {
+    margin-bottom: 5px;
+  }
+  /* line 444, ../scss/app.scss */
+  .product-thumb {
+    margin-top: inherit;
+    margin-bottom: 15px;
+  }
+  /* line 449, ../scss/app.scss */
+  .dash-post-button {
+    margin-top: 10% !important;
+    margin-bottom: 15%;
+  }
+  /* line 454, ../scss/app.scss */
+  .button {
+    margin-top: 0;
+  }
+  /* line 457, ../scss/app.scss */
+  .form-button {
+    width: 100%;
+  }
+  /* line 461, ../scss/app.scss */
+  .small-inputs input[type="text"], .small-inputs input[type="number"], .small-inputs input[type="email"], .small-inputs input[type="tel"], .small-inputs input[type="password"], .small-inputs select {
+    font-size: 1rem !important;
+  }
+  /* line 466, ../scss/app.scss */
+  .small-inputs input.hashtag {
+    background-color: #444444 !important;
+    color: #fff !important;
+  }
+  /* line 469, ../scss/app.scss */
+  .small-inputs input.hashtag::-webkit-input-placeholder {
+    color: #fff;
+  }
+  /* line 473, ../scss/app.scss */
+  .small-inputs input.hashtag:-moz-placeholder {
+    /* Firefox 18- */
+    color: #fff;
+  }
+  /* line 477, ../scss/app.scss */
+  .small-inputs input.hashtag::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #fff;
+  }
+  /* line 481, ../scss/app.scss */
+  .small-inputs input.hashtag:-ms-input-placeholder {
+    color: #fff;
+  }
+  /* line 487, ../scss/app.scss */
+  .small-inputs .price-marker + input {
+    padding-left: 38px !important;
+  }
+  /* single-product page */
+  /* line 493, ../scss/app.scss */
+  .single-product p {
+    float: left;
+  }
+  /* line 495, ../scss/app.scss */
+  .single-product p:first-of-type {
+    margin-right: 30px;
+  }
+  /* line 502, ../scss/app.scss */
+  body.app .agreement p, body.app .agreement ul {
+    padding-left: 2rem !important;
+  }
+  /* line 508, ../scss/app.scss */
+  body.app ul.listed-items-grid {
+    display: block;
+    padding: 0;
+    margin: 0 -0.625rem;
+  }
+}
+@media (min-width: 640px) {
+  /* line 519, ../scss/app.scss */
+  .dash-head {
+    margin-bottom: 0;
+  }
+  /* line 523, ../scss/app.scss */
+  .listed-product {
+    padding-bottom: 4%;
+  }
+  /* line 528, ../scss/app.scss */
+  .single-product p {
+    margin: 0;
+  }
+  /* line 534, ../scss/app.scss */
+  .list .label-text {
+    display: inline;
+  }
+  /* line 540, ../scss/app.scss */
+  .dashboard-product h6 {
+    display: none;
+  }
+  /* line 545, ../scss/app.scss */
+  .listed-thumb {
+    padding-right: 0;
+  }
+  /* spacer for single product page details */
+  /* line 550, ../scss/app.scss */
+  .top-row {
+    margin-bottom: 7% !important;
+  }
+  /* line 554, ../scss/app.scss */
+  .row-push {
+    margin-bottom: 100px;
+  }
+  /* line 558, ../scss/app.scss */
+  .list {
+    float: right;
+  }
+  /* line 563, ../scss/app.scss */
+  .product-detail {
+    margin-bottom: 7%;
+  }
+  /* line 567, ../scss/app.scss */
+  .landing-signup {
+    border-left: 1px solid #e1e1e1;
+  }
+  /* button styles */
+  /* line 573, ../scss/app.scss */
+  .button.bottom {
+    margin-top: 40px;
+  }
+}
+/* MEDIA QUERIES */
+// @media (min-width: 900px) {
+//   /* line 586, ../scss/app.scss */
+//   div.logo {
+//     margin-top: -25px;
+//     width: 207px;
+//     height: 50px;
+//     background: url("../images/logo@2x.png") no-repeat;
+//     background-size: contain;
+//   }
+//   /* line 594, ../scss/app.scss */
+//   // .top-nav-bar {
+//   //   height: 80px;
+//   //   padding-top: 18px;
+//   // }
+//   /* line 599, ../scss/app.scss */
+//   .top-bar .name h1 a {
+//     width: auto;
+//     font-size: 27px;
+//   }
+//   line 608, ../scss/app.scss
+//   .top-bar-section ul li a {
+//     font-size: 16px;
+//   }
+//   /* LANDING PAGE ONLY */
+//   /* Removes background colors in head and links */
+//   /* line 617, ../scss/app.scss */
+//   .landing-page-head .top-bar,
+//   .landing-page-head .top-bar .name h1 a,
+//   .landing-page-head .contain-to-grid,
+//   .landing-page-head .top-bar-section ul li,
+//   .landing-page-head .top-bar-section li:not(.has-form) a:not(.button) {
+//     background: none !important;
+//     color: white !important;
+//   }
+// }
+/* GLOBAL LANDING PAGE STYLES */
+/* Applied to body tag to change full page text */
+/* line 633, ../scss/app.scss */
+.landing-page h1, .landing-page h2, .landing-page h3, .landing-page h4, .landing-page h5, .landing-page h6, .landing-page p {
+  color: white;
+}
+/* line 638, ../scss/app.scss */
+.landing-page-nav {
+  margin-bottom: 0;
+  z-index: 400;
+  position: absolute;
+}
+/* line 644, ../scss/app.scss */
+.landing-intro-quote {
+  padding-top: 20%;
+}
+/* line 648, ../scss/app.scss */
+.landing-wrap {
+  position: relative;
+  z-index: 5;
+}
+/* line 653, ../scss/app.scss */
+.landing-input {
+  margin-top: 5%;
+}
+/* line 657, ../scss/app.scss */
+.landing-btn {
+  margin-top: 15px;
+}
+/* line 661, ../scss/app.scss */
+.video {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+}
+/* line 667, ../scss/app.scss */
+.video-tint {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  z-index: 1;
+}
+
+.bbbLogo {
+  display: inline-block;
+  background-image: url(https://seal-sanjose.bbb.org/logo/sehzbum/boost-643116.png);
+  background-position: 0% 0%;
+  width: 150px;
+  height:57px;
+}
+
+.bbbLogo:hover {
+  background-position: 100% 0%
+}

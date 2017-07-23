@@ -1,0 +1,69 @@
+@import "foundation-custom";
+@import "fonts";
+@import "font-awesome.min";
+@import "react-tel-input";
+@import "form";
+@import "messages";
+@import "config";
+@import "dashboard";
+@import "signup";
+@import "receipts";
+@import "app";
+@import "boost-app.custom";
+
+.flag-dropdown {
+  color: black;
+}
+// .contain-to-grid, .top-bar {
+//   background: #ffffff;
+// }
+// .top-bar-section li:not(.has-form) a:not(.button) {
+//   background: #921a68;
+// }
+// .top-bar.expanded .title-area {
+//   background: #921a68;
+// }
+// .top-bar.expanded .toggle-topbar a {
+//   color: #ffffff;
+// }
+// .top-bar.expanded {
+//   background: #921a68;
+// }
+/* $text-color: #424242; */
+/* Transitions and breakpoint styles */
+/* Change to 9999px for always mobile layout */
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@media print {
+  @page {
+    margin: .5cm;
+  }
+}
+
+
+.button.secondary.inverse {
+  background: white;
+  color: #921a68;
+}

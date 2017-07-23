@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="26px" height="115px" viewBox="0 0 26 115" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7 (28169) - http://www.bohemiancoding.com/sketch -->
+    <title>input-email</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="phone" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="address2-copy-9"></g>
+        <text id="@" font-family="SFUIDisplay-Light, SF UI Display" font-size="14" font-weight="300" fill="#D8D8D8">
+            <tspan x="6" y="16">@</tspan>
+        </text>
+        <text id="@-copy" font-family="SFUIDisplay-Light, SF UI Display" font-size="14" font-weight="300" fill="#941469">
+            <tspan x="6" y="63">@</tspan>
+        </text>
+        <text id="@" font-family="SFUIDisplay-Light, SF UI Display" font-size="14" font-weight="300" fill="#15D239">
+            <tspan x="6" y="110">@</tspan>
+        </text>
+    </g>
+</svg>

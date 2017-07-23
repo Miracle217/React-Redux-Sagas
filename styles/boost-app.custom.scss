@@ -1,0 +1,3056 @@
+
+@import "config";
+
+/* line 1, ../scss/_boost-app-custom.scss */
+html {
+  position: relative !important;
+  min-height: 100%;
+  height: auto !important;
+  background-color: $primarybackground;
+}
+/* line 8, ../scss/_boost-app-custom.scss */
+.hidden {
+  display: none;
+}
+/* line 12, ../scss/_boost-app-custom.scss */
+.no-margin {
+  margin: 0 !important;
+}
+/* line 16, ../scss/_boost-app-custom.scss */
+.inline {
+  display: inline-block;
+}
+/* line 20, ../scss/_boost-app-custom.scss */
+.relative {
+  position: relative;
+}
+
+/* line 76, ../scss/_boost-app-custom.scss */
+div.logo {
+  position: relative;
+  margin-top: .8rem;
+  margin-left: 1rem;
+  display: block;
+
+  // text-indent: -2000px;
+  .header-circle {
+    width: 50px;
+    transition: all, .3s, ease-in-out;
+    @media #{$medium-up} {
+      width: 50px;
+    }
+  }
+  .header-tag {
+    width: 150px;
+    margin-left: 8px;
+    transition: all, .3s, ease-in-out;
+    @media #{$medium-up} {
+      width: 198px;
+    }
+    @media only screen and (max-width: 425px) {
+      display: none;
+    }
+  }
+}
+@media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+  /* line 76, ../scss/_boost-app-custom.scss */
+}
+/* line 88, ../scss/_boost-app-custom.scss */
+div.logo-circle {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 1rem;
+  text-indent: -2000px;
+  background: url("../images/boost-mark-gray.png") no-repeat;
+}
+@media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+  /* line 88, ../scss/_boost-app-custom.scss */
+  div.logo-circle {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url("../images/boost-mark-gray@2x.png");
+    background-size: 50px 50px;
+  }
+}
+/* line 98, ../scss/_boost-app-custom.scss */
+.circle-bg {
+  display: inline-block;
+  padding: 15px;
+  line-height: 100%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: white;
+  text-align: center;
+  margin-bottom: .5rem;
+}
+/* line 112, ../scss/_boost-app-custom.scss */
+.rect-bg {
+  display: inline-block;
+  padding: 15px;
+  line-height: 100%;
+  min-height: 100px;
+  min-width: 100px;
+  overflow: hidden;
+  background-color: white;
+  text-align: center;
+  margin-bottom: .5rem;
+}
+/* line 124, ../scss/_boost-app-custom.scss */
+.full-width {
+  max-width: none;
+}
+/* line 128, ../scss/_boost-app-custom.scss */
+div.no-wrap, div.no-wrap > div, div.no-wrap > a {
+  white-space: nowrap !important;
+}
+/* line 135, ../scss/_boost-app-custom.scss */
+body.signup, body.app {
+  background-color: $primarybackground;
+  height: auto !important;
+  position: initial;
+}
+
+/* line 153, ../scss/_boost-app-custom.scss */
+body.signup .row div.top-block, body.app .row div.top-block {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 100%;
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+  background-color: $primarybackground;
+  position: relative;
+  text-align: center;
+}
+/* line 159, ../scss/_boost-app-custom.scss */
+body.signup .row div.top-block .account-logo, body.app .row div.top-block .account-logo {
+  margin-bottom: 28px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+
+
+/* line 168, ../scss/_boost-app-custom.scss */
+body.signup .row div.full-block, body.app .row div.full-block {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 100%;
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+  text-align: center;
+}
+/* line 174, ../scss/_boost-app-custom.scss */
+body.signup .row div.top-sub-block, body.app .row div.top-sub-block {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 100%;
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+  background-color: $primarybackground;
+  position: relative;
+  text-align: center;
+}
+/* line 183, ../scss/_boost-app-custom.scss */
+body.signup .row div.note-block, body.app .row div.note-block {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 100%;
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2em;
+  float: none;
+  background-color: $primarybackground;
+  position: relative;
+  text-align: center;
+}
+/* line 190, ../scss/_boost-app-custom.scss */
+body.signup .row div.top-msg, body.app .row div.top-msg {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 100%;
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+  background-color: #601149;
+  position: relative;
+  text-align: center;
+}
+/* line 196, ../scss/_boost-app-custom.scss */
+body.signup .row div.top-msg h4, body.app .row div.top-msg h4 {
+  margin: 0;
+  font-weight: normal;
+  line-height: 75px;
+}
+/* line 204, ../scss/_boost-app-custom.scss */
+body.signup .row.with-logo, body.app .row.with-logo {
+  margin: 15px auto;
+}
+/* line 208, ../scss/_boost-app-custom.scss */
+body.signup .row.space30, body.app .row.space30 {
+  padding-top: 15px !important;
+}
+/* line 212, ../scss/_boost-app-custom.scss */
+body.signup .row.space40, body.app .row.space40 {
+  padding-top: 20px !important;
+}
+/* line 216, ../scss/_boost-app-custom.scss */
+body.signup .row.space50, body.app .row.space50 {
+  padding-top: 25px !important;
+}
+/* line 220, ../scss/_boost-app-custom.scss */
+body.signup .row.space70, body.app .row.space70 {
+  padding-top: 35px !important;
+}
+/* line 224, ../scss/_boost-app-custom.scss */
+body.signup .row.space50, body.app .row.space50 {
+  padding-top: 25px !important;
+}
+/* line 228, ../scss/_boost-app-custom.scss */
+body.signup .row.space150, body.app .row.space150 {
+  padding-top: 75px !important;
+}
+/* line 234, ../scss/_boost-app-custom.scss */
+body.signup.full-width .row, body.app.full-width .row {
+  background-color: #fff;
+}
+/* line 238, ../scss/_boost-app-custom.scss */
+body.signup.body-footer, body.app.body-footer {
+  padding: 0 0 100px;
+  /* bottom = footer height */
+}
+/* line 242, ../scss/_boost-app-custom.scss */
+body.signup.body-footer main, body.app.body-footer main {
+  padding-bottom: 0px;
+}
+/* line 246, ../scss/_boost-app-custom.scss */
+body.signup.body-footer div.footer-btn, body.app.body-footer div.footer-btn {
+  background-color: #fff;
+  padding-top: 0px;
+}
+/* line 250, ../scss/_boost-app-custom.scss */
+body.signup.body-footer div.footer-btn .form-button, body.app.body-footer div.footer-btn .form-button {
+  margin: 0;
+}
+/* line 253, ../scss/_boost-app-custom.scss */
+body.signup.body-footer div.footer-btn div, body.app.body-footer div.footer-btn div {
+  background-color: #fff;
+}
+/* line 261, ../scss/_boost-app-custom.scss */
+body.signup.body-footer.color-bg main, body.app.body-footer.color-bg main {
+  padding-bottom: 10px;
+}
+/* line 267, ../scss/_boost-app-custom.scss */
+body.signup h2, body.app h2 {
+  line-height: 1.1;
+}
+
+.feature {
+  .header, .content {
+    @extend .medium-12 !optional;
+    @extend .large-12 !optional;
+    margin-left: 0;
+    margin-right: 0;
+    @media #{$medium-up} {
+      text-align: left;
+    }
+    a h1 {
+      color: $darkGray;
+      line-height: 52px !important;
+      &:hover {
+        color: $accentPurple;
+        cursor: pointer;
+      }
+    }
+
+    h3 {
+      margin-top: 0;
+    }
+
+    .standout {
+      display: block;
+      width: 100%;
+      background: $lightGray;
+      padding: .5rem 1rem;
+
+    }
+  }
+  h1, h6 {text-align: left;}
+
+  .feature-image, .feature-message {
+    @include grid-column(12);
+    @media #{$medium-up} {
+      @include grid-column(6);
+    }
+  }
+  .feature-image {
+    margin: 0 auto;
+    text-align: center;
+    img {
+      margin-top: 1rem;
+      @media #{$medium-up} {
+        padding-left: 20%;
+      }
+    }
+  }
+}
+
+.header {
+  @extend .large-6 !optional;
+  @extend .medium-8 !optional;
+  @extend .small-12 !optional;
+  @extend .columns !optional;
+  @extend .centered !optional;
+  padding: 1.5rem 1.5rem 0;
+
+}
+@media #{$small-only} {
+  .header {
+    text-align: center;
+    h1, h6 {text-align: left;}
+  }
+}
+
+@media #{$medium-up} {
+  .header {
+    text-align: center;
+  }
+}
+
+.app .header h1 {
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 47px;
+  color: $darkGray;
+}
+
+/* line 271, ../scss/_boost-app-custom.scss */
+body.signup h1, body.app h1 {
+  line-height: 1.2;
+}
+/* line 275, ../scss/_boost-app-custom.scss */
+h1, h2, h6, h5, h3, h4, h6, h5,  h3, h4 {
+  font-weight: 700;
+  color: $accentPurple;
+  text-align: center;
+}
+/* line 279, ../scss/_boost-app-custom.scss */
+h1.dark, h2.dark, h6.dark, h5.dark, h3.dark, h4.dark, body.app h1.dark, body.app h2.dark, body.app h6.dark, body.app h5.dark, body.app h3.dark, body.app h4.dark {
+  color: #444444;
+}
+/* line 285, ../scss/_boost-app-custom.scss */
+h4.account-name, body.app h4.account-name {
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+/* line 290, ../scss/_boost-app-custom.scss */
+body.signup .subheader, body.app .subheader {
+  margin-top: 0;
+}
+/* line 294, ../scss/_boost-app-custom.scss */
+body.signup h6.subheader, body.app h6.subheader {
+  color: $accentPurple;
+  margin-bottom: .9rem;
+}
+
+/* line 305, ../scss/_boost-app-custom.scss */
+body.signup footer, body.signup div.footer-btn, body.app footer, body.app div.footer-btn {
+  margin-top: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding-top: 30px;
+  height: 100px;
+  background-color: #601149;
+  width: 100%;
+}
+/* line 306, ../scss/_boost-app-custom.scss */
+body.signup footer div, body.signup div.footer-btn div, body.app footer div, body.app div.footer-btn div {
+  background-color: #601149;
+}
+/* line 319, ../scss/_boost-app-custom.scss */
+body.signup footer .footer-txt, body.signup div.footer-btn .footer-txt, body.app footer .footer-txt, body.app div.footer-btn .footer-txt {
+  color: #f0a0d3;
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+/* line 324, ../scss/_boost-app-custom.scss */
+body.signup footer p, body.signup div.footer-btn p, body.app footer p, body.app div.footer-btn p {
+  margin-bottom: 0px;
+}
+/* line 328, ../scss/_boost-app-custom.scss */
+body.signup footer .footer-link, body.signup div.footer-btn .footer-link, body.app footer .footer-link, body.app div.footer-btn .footer-link {
+  color: #fff;
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+/* line 339, ../scss/_boost-app-custom.scss */
+hr.divider {
+  display: block;
+  height: 2px;
+  border: 0;
+  border-top: 2px solid #fff;
+  margin: 12px auto;
+  padding: 0;
+  max-width: 30px;
+}
+/* line 348, ../scss/_boost-app-custom.scss */
+hr.divider.extra-space {
+  margin: 22px auto;
+}
+/* line 354, ../scss/_boost-app-custom.scss */
+.price-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 0;
+  cursor: pointer;
+  font-family: $font-family-sans-serif;
+  font-weight: regular;
+  line-height: normal;
+  margin: 0;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.275rem 0.65rem 0.3375rem 0.65rem;
+  font-size: 1.0625rem;
+  background-color: #fff;
+  border-color: #cccccc;
+  color: #333333;
+  border-radius: 4px;
+  transition: background-color 300ms ease-out;
+  &:hover {
+    background: rgba(255, 255, 255, .5);
+  }
+  .fa {
+    color: $accentPurple;
+    @media #{$large-up} {
+      display: none;
+    }
+  }
+}
+/* line 361, ../scss/_boost-app-custom.scss */
+.form-button {
+  position: relative;
+  display: inline-block;
+  height: 44px;
+  max-width: 300px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 100px !important;
+  border: 0;
+  cursor: pointer;
+  font-family: $font-family-sans-serif;
+  font-weight: 400;
+  line-height: inherit;
+  margin: 0 0 1.25rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: lowercase;
+  padding: 8px;
+  background-color: $accentPurple;
+  color: #FFFFFF;
+  transition: background-color 300ms ease-out;
+  font-size: 16px !important;
+  letter-spacing: -0.39px;
+  -webkit-font-smoothing: antialiased;
+  outline: 0;
+  &:hover {
+    background-color: $darkPurple;
+  }
+}
+/* line 368, ../scss/_boost-app-custom.scss */
+.form-button.xsmall {
+  width: 180px;
+  height: 50px;
+  font-size: 14px;
+  line-height: 12px;
+  margin: 0 !important;
+  display: inline-block;
+  font-weight: 600 !important;
+}
+/* line 378, ../scss/_boost-app-custom.scss */
+.form-button.off {
+  background-color: $lightGray !important;
+}
+/* line 383, ../scss/_boost-app-custom.scss */
+.fb-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 0;
+  cursor: pointer;
+  font-family: $font-family-sans-serif;
+  font-weight: regular;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.75rem 1.5rem 0.8125rem 1.5rem;
+  background-color: #3b5998;
+  border-color: #2f477a;
+  color: #FFFFFF;
+  border-radius: 0;
+  transition: background-color 300ms ease-out;
+  color: #fff;
+  display: block;
+  max-width: 300px;
+  margin: 0px auto 10px auto;
+  text-align: left;
+  background-image: url("../images/icon-fb.png");
+  background-repeat: no-repeat;
+  background-position: 25px 15px;
+  padding: 17px 20px 20px 65px;
+}
+@media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+  /* line 383, ../scss/_boost-app-custom.scss */
+  .fb-button {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url("../images/icon-fb@2x.png");
+    background-size: 25px 25px;
+  }
+}
+/* line 397, ../scss/_boost-app-custom.scss */
+.email-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 0;
+  cursor: pointer;
+  font-family: $font-family-sans-serif;
+  font-weight: regular;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.75rem 1.5rem 0.8125rem 1.5rem;
+  background-color: #5f1349;
+  border-color: #4c0f3a;
+  color: #FFFFFF;
+  border-radius: 0;
+  transition: background-color 300ms ease-out;
+  color: #fff;
+  max-width: 300px;
+  display: block;
+  margin: 10px auto;
+  text-align: left;
+  background-image: url("../images/icon-mail.png");
+  background-repeat: no-repeat;
+  background-position: 25px 22px;
+  padding: 17px 20px 20px 65px;
+}
+@media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+  /* line 397, ../scss/_boost-app-custom.scss */
+  .email-button {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url("../images/icon-mail@2x.png");
+    background-size: 22px 14px;
+  }
+}
+/* line 411, ../scss/_boost-app-custom.scss */
+.fb-button:hover, .email-button:hover {
+  color: #fff;
+}
+/* line 417, ../scss/_boost-app-custom.scss */
+input[type="text"], input[type="number"], input[type="email"], input[type="tel"], input[type="password"], select {
+  background-color: #fff;
+  height: 3.125rem;
+  margin: 0;
+  border-color: $lightGray;
+  padding-left: 50px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #444444;
+  box-shadow: none !important;
+  &.error {
+    background-color: #fffcfc;
+    color: #ec3d74;
+  }
+  &.error::-webkit-input-placeholder {
+    color: #ec3d74 !important;
+  }
+  &.error::-moz-placeholder {
+    color: #ec3d74 !important;
+  }
+  &.error:-ms-input-placeholder {
+    color: #ec3d74 !important;
+  }
+}
+
+/* line 430, ../scss/_boost-app-custom.scss */
+.small-inputs input[type="text"], .small-inputs input[type="number"], .small-inputs input[type="email"], .small-inputs input[type="tel"], .small-inputs input[type="password"], .small-inputs select {
+  height: 60px;
+  font-size: 18px;
+  font-size: 1.125rem;
+  padding-left: 30px;
+  background-color: #fff;
+}
+/* line 438, ../scss/_boost-app-custom.scss */
+input[type="text"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="tel"]:focus, select:hover, select:focus {
+  background-color: #fff;
+  margin: 0;
+  border-color: $accentPurple;
+  font-size: 16px;
+  font-size: 1rem;
+  color: #444444;
+}
+/* line 443, ../scss/_boost-app-custom.scss */
+.lt-gray {
+  color: #888888;
+}
+/* line 446, ../scss/_boost-app-custom.scss */
+select.filter {
+  display: inline-block;
+  max-width: 140px;
+  margin-left: 10px;
+  height: 40px;
+}
+/* line 453, ../scss/_boost-app-custom.scss */
+article {
+  margin-top: 2rem;
+  .header {
+    padding-top: 0;
+    padding-left: 0.9375rem;
+    margin-bottom: 2rem;
+  }
+
+}
+
+/* line 459, ../scss/_boost-app-custom.scss */
+article h4 {
+  color: #921a68;
+}
+/* line 463, ../scss/_boost-app-custom.scss */
+article p {
+  color: #444444;
+}
+
+article a {
+  color: $accentPurple;
+}
+
+/* line 467, ../scss/_boost-app-custom.scss */
+.boost-app-form, .dash-container {
+  background-color: $primarybackground;
+}
+
+/* line 475, ../scss/_boost-app-custom.scss */
+.boost-app-form div.button-row, .dash-container div.button-row {
+  background-color: #fff;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  border: 1px solid $lightGray;
+  border-top: none;
+}
+/* line 483, ../scss/_boost-app-custom.scss */
+.boost-app-form .footer-btn .button-row, .dash-container .footer-btn .button-row {
+  padding-top: 20px;
+}
+/* line 488, ../scss/_boost-app-custom.scss */
+.boost-app-form label, .dash-container label {
+  margin: 0;
+  position: relative;
+}
+/* line 493, ../scss/_boost-app-custom.scss */
+.boost-app-form label:last-of-type > input, .dash-container label:last-of-type > input {
+  border-bottom: 1px solid $lightGray;
+}
+/* line 498, ../scss/_boost-app-custom.scss */
+.boost-app-form .circle, .dash-container .circle {
+  background: $lightGray;
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  z-index: 10;
+  top: 22px;
+  left: 20px;
+}
+/* line 509, ../scss/_boost-app-custom.scss */
+.boost-app-form input:focus + .circle, .boost-app-form label.valid .circle, .dash-container input:focus + .circle, .dash-container label.valid .circle {
+  background: #921a68;
+}
+/* line 513, ../scss/_boost-app-custom.scss */
+.boost-app-form .instagram + .circle, .dash-container .instagram + .circle {
+  background: url(../images/instagram-gray.png) no-repeat;
+  border-radius: 0;
+  border: none;
+  height: 17px;
+  width: 17px;
+  position: absolute;
+  z-index: 10;
+  top: 19px;
+  left: 20px;
+}
+/* line 525, ../scss/_boost-app-custom.scss */
+.boost-app-form input.instagram:focus + .circle, .boost-app-form label.valid .instagram + .circle, .dash-container input.instagram:focus + .circle, .dash-container label.valid .instagram + .circle {
+  background: url(../images/icon-instagram.png) no-repeat;
+}
+/* line 529, ../scss/_boost-app-custom.scss */
+.boost-app-form .twitter + .circle, .dash-container .twitter + .circle {
+  background: url(../images/twitter-gray.png) no-repeat;
+  border-radius: 0;
+  border: none;
+  height: 17px;
+  width: 17px;
+  position: absolute;
+  z-index: 10;
+  top: 19px;
+  left: 20px;
+}
+/* line 541, ../scss/_boost-app-custom.scss */
+.boost-app-form small.price-marker, .boost-app-form small.pw-marker, .boost-app-form small.cc-marker, .dash-container small.price-marker, .dash-container small.pw-marker, .dash-container small.cc-marker {
+  position: absolute;
+  z-index: 10;
+  height: 60px;
+  width: 30px;
+  top: 0px;
+  background-color: #eee;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 60px;
+  text-indent: 10px;
+  color: #444444;
+}
+/* line 555, ../scss/_boost-app-custom.scss */
+.boost-app-form small.pw-marker, .boost-app-form small.cc-marker, .dash-container small.pw-marker, .dash-container small.cc-marker {
+  width: auto;
+  color: #aaa;
+  text-indent: 0px;
+  padding: 0 20px;
+}
+/* line 563, ../scss/_boost-app-custom.scss */
+.boost-app-form small.change-pw, .dash-container small.change-pw {
+  position: absolute;
+  right: 60px;
+  top: 0px;
+  color: #921a68;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 60px;
+}
+/* line 574, ../scss/_boost-app-custom.scss */
+.boost-app-form input.pw-marker, .dash-container input.pw-marker {
+  padding-left: 130px !important;
+}
+/* line 578, ../scss/_boost-app-custom.scss */
+.boost-app-form input.cc-marker, .dash-container input.cc-marker {
+  padding-left: 150px !important;
+}
+/* line 582, ../scss/_boost-app-custom.scss */
+.boost-app-form input.cvc-marker, .dash-container input.cvc-marker {
+  padding-left: 90px !important;
+}
+/* line 586, ../scss/_boost-app-custom.scss */
+.boost-app-form .form-subheader, .dash-container .form-subheader {
+  color: lighten($darkGray, 50%) !important;
+  margin-top: .5rem;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: left !important;
+}
+/* line 591, ../scss/_boost-app-custom.scss */
+.boost-app-form .form-subheader a, .dash-container .form-subheader a {
+  font-style: normal;
+  color: #921a68;
+}
+/* line 597, ../scss/_boost-app-custom.scss */
+.boost-app-form small.icon-plus, .dash-container small.icon-plus {
+  position: absolute;
+  z-index: 10;
+  height: 25px;
+  width: 25px;
+  top: 18px;
+  left: -13px;
+  background: url(../images/icon-plus.png) no-repeat;
+}
+@media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+  /* line 597, ../scss/_boost-app-custom.scss */
+  .boost-app-form small.icon-plus, .dash-container small.icon-plus {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url("../images/icon-plus@2x.png");
+    background-size: 25px 25px;
+  }
+}
+/* line 608, ../scss/_boost-app-custom.scss */
+.boost-app-form small.icon-equals, .dash-container small.icon-equals {
+  position: absolute;
+  z-index: 10;
+  height: 25px;
+  width: 25px;
+  top: 18px;
+  left: -12px;
+  background: url(../images/icon-equals.png) no-repeat;
+}
+@media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+  /* line 608, ../scss/_boost-app-custom.scss */
+  .boost-app-form small.icon-equals, .dash-container small.icon-equals {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url("../images/icon-equals@2x.png");
+    background-size: 25px 25px;
+  }
+}
+/* line 623, ../scss/_boost-app-custom.scss */
+.boost-app-form input.twitter:focus + .circle, .boost-app-form label.valid .twitter + .circle, .dash-container input.twitter:focus + .circle, .dash-container label.valid .twitter + .circle {
+  background: url(../images/icon-twitter.png) no-repeat;
+}
+/* line 627, ../scss/_boost-app-custom.scss */
+.boost-app-form .fb + .circle, .dash-container .fb + .circle {
+  background: url(../images/icon-fb-small-gray.png) no-repeat;
+  border-radius: 0;
+  border: none;
+  height: 18px;
+  width: 18px;
+  position: absolute;
+  z-index: 10;
+  top: 17px;
+  left: 20px;
+}
+/* line 639, ../scss/_boost-app-custom.scss */
+.boost-app-form input.fb:focus + .circle, .boost-app-form label.valid .fb + .circle, .dash-container input.fb:focus + .circle, .dash-container label.valid .fb + .circle {
+  background: url(../images/icon-fb-small.png) no-repeat;
+}
+/* line 643, ../scss/_boost-app-custom.scss */
+.boost-app-form small.credit-card-number, .dash-container small.credit-card-number {
+  background: url(../images/icon-cc.png) no-repeat;
+  height: 17px;
+  width: 27px;
+  position: absolute;
+  top: 17px;
+  right: 20px;
+}
+/* line 652, ../scss/_boost-app-custom.scss */
+.boost-app-form small.security-code, .dash-container small.security-code {
+  background: url(../images/icon-lock.png) no-repeat;
+  height: 15px;
+  width: 12px;
+  position: absolute;
+  top: 17px;
+  right: 20px;
+}
+body.app .boost-app-form input::-webkit-input-placeholder{
+  font-style: normal;
+  color: #999;
+}
+body.app .boost-app-form input::-moz-input-placeholder{
+  font-style: normal;
+  color: #999;
+}
+body.app .boost-app-form input:-moz-input-placeholder {
+  font-style: normal;
+  color: #999;
+}
+body.app .boost-app-form input:-ms-input-placeholder {
+  font-style: normal;
+  color: #999;
+}
+/* line 664, ../scss/_boost-app-custom.scss */
+label {
+  position: relative;
+}
+/* line 668, ../scss/_boost-app-custom.scss */
+label ::-webkit-input-placeholder {
+  font-style: normal;
+  color: #999;
+}
+/* line 672, ../scss/_boost-app-custom.scss */
+label :-moz-placeholder {
+  /* older Firefox*/
+  font-style: normal;
+  color: #656565;
+}
+/* line 676, ../scss/_boost-app-custom.scss */
+label ::-moz-placeholder {
+  /* Firefox 19+ */
+  font-style: normal;
+  color: #656565;
+}
+/* line 680, ../scss/_boost-app-custom.scss */
+label :-ms-input-placeholder {
+  font-style: normal;
+  color: #656565;
+}
+/* line 687, ../scss/_boost-app-custom.scss */
+label.error input#email {
+  color: #eab000 !important;
+}
+/* line 691, ../scss/_boost-app-custom.scss */
+label.error .circle, label.error input#email:focus + .circle {
+  background: #eab000;
+}
+/* line 695, ../scss/_boost-app-custom.scss */
+label.error ::-webkit-input-placeholder {
+  color: #eab000 !important;
+}
+/* line 698, ../scss/_boost-app-custom.scss */
+label.error :-moz-placeholder {
+  /* older Firefox*/
+  color: #eab000 !important;
+}
+/* line 701, ../scss/_boost-app-custom.scss */
+label.error ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #eab000 !important;
+}
+/* line 704, ../scss/_boost-app-custom.scss */
+label.error :-ms-input-placeholder {
+  color: #eab000 !important;
+}
+/* line 711, ../scss/_boost-app-custom.scss */
+.error small.error {
+  position: absolute;
+  right: 0px;
+  top: 1px;
+  height: 50px;
+  min-width: 90px;
+  background-color: #eab000;
+  background-image: url("../images/icon-error-alert.png");
+  background-repeat: no-repeat;
+  background-position: 10px 20px;
+  line-height: 38px;
+  padding-left: 30px;
+}
+@media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+  /* line 711, ../scss/_boost-app-custom.scss */
+  .error small.error {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url("../images/icon-error-alert@2x.png");
+    background-size: 10px 10px;
+  }
+}
+/* line 727, ../scss/_boost-app-custom.scss */
+small.password-match {
+  position: absolute;
+  right: 0px;
+  top: 1px;
+  height: 50px;
+  min-width: 90px;
+  background-color: #90a501;
+  color: #fff;
+  padding: 0.375rem 0.5625rem 0.5625rem;
+  font-style: italic;
+  font-size: 12px;
+  font-size: 0.75rem;
+  background-image: url("../images/icon-checked.png");
+  background-repeat: no-repeat;
+  background-position: 10px 20px;
+  line-height: 38px;
+  padding-left: 30px;
+}
+@media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+  /* line 727, ../scss/_boost-app-custom.scss */
+  small.password-match {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url("../images/icon-checked@2x.png");
+    background-size: 10px 10px;
+  }
+}
+/* line 746, ../scss/_boost-app-custom.scss */
+.no-padding {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+/* line 751, ../scss/_boost-app-custom.scss */
+.summary-body.no-padding {
+  padding-top: 20px;
+}
+/* line 755, ../scss/_boost-app-custom.scss */
+.no-bottom-margin {
+  margin-bottom: 0px !important;
+}
+/* line 759, ../scss/_boost-app-custom.scss */
+.bottom-margin-small {
+  margin-bottom: 10px !important;
+}
+/* line 763, ../scss/_boost-app-custom.scss */
+.half-color-block {
+  display: none;
+}
+/* line 769, ../scss/_boost-app-custom.scss */
+body.app {
+  padding: 0 0 130px;
+  /* bottom = footer height */
+}
+/* line 773, ../scss/_boost-app-custom.scss */
+body.app .agreement {
+  padding-top: 40px;
+  background-color: #fff;
+}
+/* line 777, ../scss/_boost-app-custom.scss */
+body.app .agreement strong {
+  color: #888;
+  font-weight: 600;
+  padding-bottom: 20px;
+  display: block;
+}
+/* line 785, ../scss/_boost-app-custom.scss */
+body.app .agreement p, body.app .agreement ul {
+  font-style: italic;
+  color: #bbb;
+  font-weight: 300;
+  font-size: 14px;
+  font-size: 0.875rem;
+  padding: 0 10px 0 100px;
+  margin: 0;
+  list-style-position: inside;
+}
+/* line 797, ../scss/_boost-app-custom.scss */
+body.app .agreement li, body.app .agreement p {
+  padding-bottom: 15px;
+}
+/* line 805, ../scss/_boost-app-custom.scss */
+body.app footer {
+  background-color: $primarybackground;
+  height: 130px;
+}
+/* line 810, ../scss/_boost-app-custom.scss */
+body.app footer div {
+  background-color: $primarybackground;
+}
+/* line 814, ../scss/_boost-app-custom.scss */
+body.app footer ul {
+  margin: 0 auto;
+  list-style: none;
+}
+/* line 821, ../scss/_boost-app-custom.scss */
+body.app footer li {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+/* line 833, ../scss/_boost-app-custom.scss */
+body.app footer ul li a {
+  font-weight: 400;
+  color: #979797;
+  letter-spacing: -0.33px;
+  line-height: 2rem;
+  text-align: center;
+  text-transform: lowercase;
+}
+/* line 846, ../scss/_boost-app-custom.scss */
+body.app div.dash-container .box-shadow, body.app .box-shadow div.dashboard-body {
+  position: relative;
+  color: #444444;
+  max-width: 960px;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+/* line 853, ../scss/_boost-app-custom.scss */
+body.app div.modal-window-content {
+  margin-top: 0px !important;
+}
+/* line 858, ../scss/_boost-app-custom.scss */
+body.app section.summary-body, body.app section.summary-body, body.app .table-data, body.app .table-data div.dashboard-body {
+  background-color: #f7f7f7;
+}
+
+
+
+/* line 866, ../scss/_boost-app-custom.scss */
+.nav-link {
+  @include grid-column(4);
+  padding: 0;
+}
+.setting-block {
+  @include grid-column(12);
+  position: relative;
+  font-size: 16px;
+  line-height: 1em;
+  padding-bottom: 1.5rem;
+  padding-left: 0;
+  padding-right: 0;
+  h3 {
+    margin-top: 0;
+  }
+
+  input[type='text'], input[type='tel'], input[type='number'], input[type='password'] {
+    background-position-x: 0 !important;
+    background-position-y: 18px !important;
+    padding-left: 2rem !important;
+    font-size: 16px;
+  }
+
+  input#lastName {
+    padding-left: 1rem !important;
+  }
+
+  .form-button {
+    margin: 1rem auto;
+    width: 90%;
+  }
+  .setting-block-inner {
+    background-color: $white;
+    padding: 1.5rem;
+    input:focus {
+      border-bottom-color: $accentPurple !important;
+    }
+  }
+  .close-button {
+    color: $white;
+     background-color: $accentPurple;
+     float: right;
+     width: 1.5rem;
+     height: 1.5rem;
+     display: inline-block;
+     border-radius: 1000px 1000px 1000px 1000px;
+     text-align: center;
+     line-height: 1.5rem;
+  }
+  .caption {
+    color: lighten($darkGray, 50%);
+    font-weight: normal;
+    font-size: 13px;
+  }
+
+  h3 {
+    text-transform: lowercase !important;
+    font-weight: 400;
+    color: $darkGray;
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+    line-height: 1em;
+  }
+  .social-title {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+
+  a {
+    color: $accentPurple;
+  }
+
+}
+
+.account + .account {
+  border-top: 2px dotted $lightGray;
+  padding-top: 1rem;
+}
+
+
+/* line 889, ../scss/_boost-app-custom.scss */
+.nav-link:last-child:after {
+  border: 0px;
+}
+/* line 893, ../scss/_boost-app-custom.scss */
+.nav-link.active {
+  border-bottom: 4px solid #921a68;
+}
+/* line 897, ../scss/_boost-app-custom.scss */
+
+/* line 902, ../scss/_boost-app-custom.scss */
+.nav-link a {
+  display: block;
+  color: $accentPurple;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: -0.49px;
+  text-align: center;
+}
+
+.nav-link.active a {
+  color: $darkGray;
+}
+
+
+/* line 911, ../scss/_boost-app-custom.scss */
+.nav-link a:hover {
+  color: #921a68;
+}
+/* line 916, ../scss/_boost-app-custom.scss */
+.nav-link:hover {
+  border-bottom: 4px solid #921a68;
+  transition-property: all;
+  transition-duration: 0.25s;
+}
+
+.dash-wrapper {
+  @include grid-row();
+}
+
+.dash-nav {
+  @include grid-column(12);
+
+}
+.dash-container {
+  @include grid-column(12);
+  padding-top: 1rem;
+}
+
+@media #{$medium-up} {
+  .dash-outer {
+    background-color: $primarybackground;
+  }
+  .dash-nav {
+    margin-top: 2rem;
+    @include grid-column(2);
+
+  }
+  .dash-container {
+    @include grid-column(10);
+    padding-top: 0;
+  }
+
+  .setting-block:not(.full) {
+    @include grid-column(6);
+  }
+  .setting-block.full {
+    @include grid-column(12);
+  }
+
+  .nav-link {
+    border-left: 4px solid rgba($accentPurple, 0);
+    @include grid-column(12);
+    &.active {
+      border-bottom: 0 !important;
+      border-left: 4px solid $accentPurple !important;
+    }
+    &:hover {
+      border-bottom: 0 !important;
+      border-left: 4px solid rgba($accentPurple, 50%) !important;
+    }
+    a {
+      text-align: left;
+      font-size: 1.125rem;
+    }
+  }
+}
+
+
+/* line 923, ../scss/_boost-app-custom.scss */
+body.app div.items-container {
+  min-height: 120px;
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+  bottom: 0px;
+  padding-bottom: 1px;
+}
+/* line 931, ../scss/_boost-app-custom.scss */
+body.app div.items-container h4 {
+  color: #444444;
+  line-height: 120px;
+}
+/* line 934, ../scss/_boost-app-custom.scss */
+body.app div.items-container h4.italic {
+  font-style: italic;
+}
+/* line 940, ../scss/_boost-app-custom.scss */
+body.app .summary-body {
+  padding-bottom: 90px;
+  padding-left: 110px;
+  padding-right: 110px;
+}
+/* line 941, ../scss/_boost-app-custom.scss */
+body.app .summary-body h3 {
+  font-size: 32px;
+  font-size: 2rem;
+  color: #444444;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+/* line 948, ../scss/_boost-app-custom.scss */
+body.app .summary-body h6 {
+  font-size: 18px;
+  font-size: 1.125rem;
+  color: #444444;
+  text-align: center;
+  margin-top: 34px;
+  margin-bottom: 24px;
+  font-weight: normal;
+}
+/* line 963, ../scss/_boost-app-custom.scss */
+body.app .summary-body .row, body.app .summary-body .full-block {
+  padding: 0px;
+  margin: 0px;
+}
+/* line 969, ../scss/_boost-app-custom.scss */
+body.app div.amount {
+  font-size: 48px;
+  font-size: 3rem;
+  color: #921a68;
+  font-weight: 300;
+  line-height: 1;
+}
+/* line 975, ../scss/_boost-app-custom.scss */
+body.app div.amount.heavy {
+  font-weight: 600;
+}
+/* line 980, ../scss/_boost-app-custom.scss */
+body.app p.desc {
+  font-size: 18px;
+  font-size: 1.125rem;
+  color: #999;
+  font-weight: 300;
+}
+/* line 986, ../scss/_boost-app-custom.scss */
+body.app hr.line {
+  height: 1px;
+  border-radius: 2px;
+  border-top: 1px solid #e7e7e7;
+  margin: 40px 0 10px 0;
+  padding: 0;
+  width: 100%;
+}
+/* line 996, ../scss/_boost-app-custom.scss */
+body.app div.upload-circle {
+  margin: 0 auto;
+  border-width: 3px;
+  border-color: #d7d7d7;
+  border-style: dashed;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  width: 294px;
+  height: 294px;
+  background-image: url(../images/icon-new-photo.png);
+  background-repeat: no-repeat;
+  background-position: center 90px;
+  text-align: center;
+  line-height: 344px;
+  font-size: 18px;
+  font-size: 1.125rem;
+  color: #aaa;
+}
+/* line 1014, ../scss/_boost-app-custom.scss */
+body.app div.upload-circle:hover {
+  border-width: 0px;
+  background-image: url(../images/gas-logo.png);
+  background-position: center center;
+  text-indent: -99999px;
+}
+/* line 1022, ../scss/_boost-app-custom.scss */
+body.app .upload-image-container {
+  border-width: 3px;
+  border-color: #d7d7d7;
+  border-style: dashed;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  margin: 0 auto;
+  text-align: center;
+  height: 174px;
+  background-image: url(../images/icon-new-photo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  line-height: 160px;
+  text-indent: 70px;
+}
+@media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+  /* line 1022, ../scss/_boost-app-custom.scss */
+  body.app .upload-image-container {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url("../images/icon-add-image@2x.png");
+    background-size: 60px 60px;
+  }
+}
+/* line 1040, ../scss/_boost-app-custom.scss */
+body.app .upload-image-container span.small-desc {
+  font-size: 14px;
+  font-size: 0.875rem;
+  color: #aaa;
+}
+/* line 1045, ../scss/_boost-app-custom.scss */
+body.app .upload-image-container.small:hover {
+  background-color: #e5e5e5;
+  border-color: #e5e5e5;
+}
+/* line 1050, ../scss/_boost-app-custom.scss */
+body.app .upload-image-container.small {
+  background-position: center center;
+}
+/* line 1053, ../scss/_boost-app-custom.scss */
+body.app .upload-image-container.small img {
+  padding-top: 13px;
+  margin: auto auto;
+  display: block;
+}
+/* line 1061, ../scss/_boost-app-custom.scss */
+body.app .upload-image-container.has-image {
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-width: 3px;
+  border-radius: 10px;
+}
+/* line 1071, ../scss/_boost-app-custom.scss */
+body.app div.row.account {
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+/* line 1077, ../scss/_boost-app-custom.scss */
+body.app div.row.account div:first-child span {
+  color: lighten($darkGray, 50%);
+  font-weight: 300;
+  font-size: .9em;
+  text-transform: lowercase;
+}
+/* line 1082, ../scss/_boost-app-custom.scss */
+body.app div.row.account .account-action {
+  text-align: right;
+}
+
+/* line 1090, ../scss/_boost-app-custom.scss */
+body.app div.row.account div span.connected {
+  color: #90a501;
+}
+/* line 1095, ../scss/_boost-app-custom.scss */
+body.app .accounts-block {
+  margin-top: 60px;
+}
+/* line 1097, ../scss/_boost-app-custom.scss */
+body.app .dash-container {
+  font-size: 18px;
+}
+/* line 1102, ../scss/_boost-app-custom.scss */
+body.app .reveal-modal.overlay {
+  padding-top: 95px;
+}
+/* line 1106, ../scss/_boost-app-custom.scss */
+body.app .reveal-modal.overlay h2 {
+  color: #444444;
+  font-size: 32px;
+  font-size: 2rem;
+  margin-top: 0px;
+}
+/* line 1112, ../scss/_boost-app-custom.scss */
+body.app .reveal-modal.overlay ul.edit-image {
+  margin-top: 14px;
+  margin-bottom: 0px;
+}
+/* line 1116, ../scss/_boost-app-custom.scss */
+body.app .reveal-modal.overlay ul.edit-image li {
+  color: #444444;
+}
+/* line 1123, ../scss/_boost-app-custom.scss */
+body.app .reveal-modal.overlay ul.edit-image, body.app .reveal-modal.overlay .edit-image li {
+  list-style-position: inside;
+  list-style-type: none;
+  padding-left: 0px;
+  margin-left: 0px;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+/* line 1130, ../scss/_boost-app-custom.scss */
+body.app .reveal-modal.overlay ul.edit-image a, body.app .reveal-modal.overlay .edit-image li a {
+  color: #921a68;
+  display: block;
+}
+/* line 1136, ../scss/_boost-app-custom.scss */
+body.app .reveal-modal.overlay ul.edit-image.delete a, body.app .reveal-modal.overlay .edit-image li.delete a {
+  color: #ff2a00;
+}
+/* line 1140, ../scss/_boost-app-custom.scss */
+body.app .reveal-modal.overlay ul.edit-image.link a, body.app .reveal-modal.overlay .edit-image li.link a {
+  color: #921a68;
+  margin-top: 15px;
+}
+/* line 1146, ../scss/_boost-app-custom.scss */
+body.app .reveal-modal.overlay div.listing-detail, body.app .reveal-modal.overlay div.order-detail {
+  padding-left: 40px;
+  padding-left: 40px;
+}
+/* line 1149, ../scss/_boost-app-custom.scss */
+body.app .reveal-modal.overlay div.listing-detail ul.edit-image, body.app .reveal-modal.overlay div.order-detail ul.edit-image {
+  position: relative;
+  bottom: 0px;
+  padding: 0;
+}
+/* line 1159, ../scss/_boost-app-custom.scss */
+body.app .reveal-modal.overlay div.listing-detail div.right-vert-line, body.app .reveal-modal.overlay div.order-detail div.right-vert-line {
+  display: block;
+  background-color: #e5e5e5;
+  width: 6px;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: -30px;
+}
+/* line 1172, ../scss/_boost-app-custom.scss */
+body.app .reveal-modal.overlay div.order-detail div.right-vert-line {
+  background-color: #e5e5e5;
+}
+/* line 1176, ../scss/_boost-app-custom.scss */
+body.app .reveal-modal.overlay div.order-detail ul.edit-image li {
+  color: #2e2e2e;
+}
+/* line 1184, ../scss/_boost-app-custom.scss */
+body.app .reveal-modal.overlay.gray-bg {
+  background-color: #f7f7f7;
+  padding: 0px;
+}
+/* line 1194, ../scss/_boost-app-custom.scss */
+body.app ul.listed-items-grid {
+  display: block;
+  padding: 0;
+  margin: 0 -0.625rem;
+  text-align: center;
+  margin: 0 auto;
+}
+/* line 1199, ../scss/_boost-app-custom.scss */
+body.app ul.listed-items-grid li {
+  padding-bottom: 40px !important;
+}
+/* line 1202, ../scss/_boost-app-custom.scss */
+body.app ul.listed-items-grid li .round-item-box {
+  min-height: 375px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid $lightGray;
+  overflow: hidden;
+  position: relative;
+}
+/* line 1210, ../scss/_boost-app-custom.scss */
+body.app ul.listed-items-grid li .round-item-box:active, body.app ul.listed-items-grid li .round-item-box:active > div {
+  background-color: #e5e5e5;
+}
+/* line 1214, ../scss/_boost-app-custom.scss */
+body.app ul.listed-items-grid li .round-item-box.new-item {
+  background-color: #f4ebf1;
+}
+/* line 1217, ../scss/_boost-app-custom.scss */
+body.app ul.listed-items-grid li .round-item-box.new-item .add-icon {
+  font-size: 120px;
+  font-size: 7.5rem;
+  color: #921a68;
+  display: block;
+  margin-top: 20%;
+  font-weight: 600;
+}
+/* line 1226, ../scss/_boost-app-custom.scss */
+body.app ul.listed-items-grid li .round-item-box .item-title {
+  font-size: 22px;
+  font-size: 1.375rem;
+  line-height: 1.1;
+  padding-top: 20px;
+}
+/* line 1234, ../scss/_boost-app-custom.scss */
+body.app ul.listed-items-grid li .round-item-box .new-item-txt {
+  font-weight: 300;
+  display: block;
+  padding-top: 0px;
+  font-size: 22px;
+  font-size: 1.375rem;
+  margin-top: -40px;
+}
+/* line 1242, ../scss/_boost-app-custom.scss */
+body.app ul.listed-items-grid li .round-item-box .posted {
+  font-size: 14px;
+  font-size: 0.875rem;
+  color: #aaa;
+  padding-top: 0px;
+}
+/* line 1248, ../scss/_boost-app-custom.scss */
+body.app ul.listed-items-grid li .round-item-box .item-bottom {
+  width: 100%;
+  bottom: 0px;
+}
+/* line 1253, ../scss/_boost-app-custom.scss */
+body.app ul.listed-items-grid li .round-item-box .item-bottom .price {
+  font-weight: 500;
+  font-size: 18px;
+  font-size: 1.125rem;
+  padding: 0;
+  display: inline-block;
+}
+/* line 1259, ../scss/_boost-app-custom.scss */
+body.app ul.listed-items-grid li .round-item-box .item-bottom .hashtag {
+  font-weight: normal;
+  color: #921a68;
+  text-align: right;
+  display: inline-block;
+  float: right;
+  font-size: 18px;
+  font-size: 1.125rem;
+  padding: 0;
+}
+/* line 1272, ../scss/_boost-app-custom.scss */
+body.app ul.listed-items-grid li .round-item-box div {
+  background-color: #fff;
+  padding: 5px 30px;
+  text-align: left;
+}
+/* line 1278, ../scss/_boost-app-custom.scss */
+body.app ul.listed-items-grid li .round-item-box div:last-child {
+  padding-bottom: 25px;
+}
+/* line 1284, ../scss/_boost-app-custom.scss */
+body.app ul.listed-items-grid div.note {
+  position: absolute;
+  height: 20px;
+  z-index: 2;
+  top: 14px;
+  left: 17px;
+  border-radius: 500px;
+  font-size: 10px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 9px;
+  padding: 5px 12px !important;
+  text-align: center;
+  text-indent: 0;
+}
+/* line 1300, ../scss/_boost-app-custom.scss */
+body.app ul.listed-items-grid div.note.active {
+  background-color: #90a501 !important;
+}
+/* line 1304, ../scss/_boost-app-custom.scss */
+body.app ul.listed-items-grid div.note.stopped {
+  background-color: #444444 !important;
+}
+/* line 1309, ../scss/_boost-app-custom.scss */
+body.app ul.listed-items-grid div.note.brand {
+  background-color: #921a68 !important;
+}
+/* line 1320, ../scss/_boost-app-custom.scss */
+body.app ul.listed-items-grid img.item-img {
+  width: 100%;
+  height: 100%;
+}
+/* line 1327, ../scss/_boost-app-custom.scss */
+body.app .listed-items > ul:first-child {
+  padding-top: 50px;
+}
+/* line 1332, ../scss/_boost-app-custom.scss */
+body.app section.table-data {
+  height: 100%;
+  color: #444444;
+}
+/* line 1336, ../scss/_boost-app-custom.scss */
+body.app section.table-data .row {
+  max-width: none !important;
+}
+/* line 1340, ../scss/_boost-app-custom.scss */
+body.app section.table-data h3 {
+  font-size: 32px;
+  font-size: 2rem;
+  color: #444444;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+/* line 1347, ../scss/_boost-app-custom.scss */
+body.app section.table-data table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 40px;
+}
+/* line 1353, ../scss/_boost-app-custom.scss */
+body.app section.table-data table tr th:last-child, body.app section.table-data table tr td:last-child {
+  text-align: right;
+}
+/* line 1358, ../scss/_boost-app-custom.scss */
+body.app section.table-data table tr {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* line 1362, ../scss/_boost-app-custom.scss */
+body.app section.table-data table thead tr:first-child {
+  border-bottom: 0px;
+}
+/* line 1366, ../scss/_boost-app-custom.scss */
+body.app section.table-data table th {
+  font-style: italic;
+  padding-bottom: 15px;
+  max-width: 250px;
+}
+/* line 1373, ../scss/_boost-app-custom.scss */
+body.app section.table-data table td {
+  font-weight: normal;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  max-width: 250px;
+}
+/* line 1379, ../scss/_boost-app-custom.scss */
+body.app section.table-data table td.order-num {
+  font-size: 22px;
+  font-size: 1.375rem;
+  font-weight: 300;
+}
+/* line 1384, ../scss/_boost-app-custom.scss */
+body.app section.table-data table td.rejected {
+  color: #ff2a00;
+}
+/* line 1390, ../scss/_boost-app-custom.scss */
+body.app section.table-data .csv-box, body.app section.table-data .csv-box div {
+  background-color: #fff !important;
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-align: left;
+}
+/* line 1397, ../scss/_boost-app-custom.scss */
+body.app section.table-data .csv-box {
+  padding: 7px 10px 0px 24px;
+  height: 50px;
+  display: inline-block;
+}
+/* line 1402, ../scss/_boost-app-custom.scss */
+body.app section.table-data .csv-box .last-dl {
+  position: relative;
+  top: -3px;
+}
+/* line 1408, ../scss/_boost-app-custom.scss */
+body.app section.table-data .csv-box2 {
+  margin: 0px !important;
+  height: 50px;
+  display: inline-block;
+  line-height: 12px;
+}
+/* line 1421, ../scss/_boost-app-custom.scss */
+body.app .semi-bold {
+  font-weight: 600;
+}
+/* line 1425, ../scss/_boost-app-custom.scss */
+body.app .lt-txt {
+  color: #aaa;
+}
+/* line 1430, ../scss/_boost-app-custom.scss */
+body.app table.payment-info {
+  position: static;
+  left: 0px;
+  top: 20px;
+  border-collapse: collapse;
+  background-color: #fff;
+  max-width: 250px;
+  font-size: 14px;
+  color: #2e2e2e;
+  font-weight: normal;
+}
+/* line 1441, ../scss/_boost-app-custom.scss */
+body.app table.payment-info tr {
+  font-size: 14px;
+  color: #2e2e2e;
+}
+/* line 1446, ../scss/_boost-app-custom.scss */
+body.app table.payment-info tr.total td {
+  font-weight: bold;
+  padding-top: 10px;
+}
+/* line 1455, ../scss/_boost-app-custom.scss */
+body.app table.payment-info th {
+  background-color: #fff;
+  padding-bottom: 1px;
+  font-size: 14px;
+  color: #2e2e2e;
+  padding: 10px 10px 10px 0;
+  font-weight: bold;
+}
+/* line 1466, ../scss/_boost-app-custom.scss */
+body.app table.payment-info td {
+  padding: 0px 10px 10px 0;
+  font-weight: normal;
+  background-color: #fff;
+  font-size: 14px;
+  color: #2e2e2e;
+}
+/* line 1478, ../scss/_boost-app-custom.scss */
+body.app div.visa-icon {
+  display: inline-block;
+  background: url(../images/icon-order-visa.png) no-repeat;
+  height: 30px;
+  width: 45px;
+  position: relative;
+  top: 8px;
+  margin-right: 10px;
+}
+@media only screen and (min-width: 40.0625em) and (max-width: 48.063em) {
+  /* line 1501, ../scss/_boost-app-custom.scss */
+  body.app table.payment-info {
+    position: static;
+  }
+}
+
+
+/* min-width 641px, medium screens */
+@media only screen and (min-width: 40.0625em) {
+  /* line 1519, ../scss/_boost-app-custom.scss */
+  html, body {
+    background-color: $primarybackground;
+  }
+  /* line 1523, ../scss/_boost-app-custom.scss */
+  .half-color-block {
+    display: block;
+    height: 500px;
+    background-color: $primarybackground;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+  }
+  /* line 1540, ../scss/_boost-app-custom.scss */
+  .modal-window-content > div {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+  }
+  /* line 1546, ../scss/_boost-app-custom.scss */
+  .boost-app-form, .dash-container {
+    padding-bottom: 40px;
+  }
+  /* line 1550, ../scss/_boost-app-custom.scss */
+  .boost-app-form > div:first-child, body div.footer-btn > div, .dash-container > div:first-child {
+  }
+  /* line 1555, ../scss/_boost-app-custom.scss */
+  .boost-app-form input, .boost-app-form label, .input-center {
+    margin: 0 auto;
+  }
+  /* line 1562, ../scss/_boost-app-custom.scss */
+  body.signup div.footer-btn, body.app div.footer-btn {
+    position: static;
+    margin-top: 0px;
+  }
+  /* line 1571, ../scss/_boost-app-custom.scss */
+  body.app h1, body.app h2, body.signup h1, body.signup h2 {
+    font-size: 72px;
+    font-size: 4.5rem;
+    margin-bottom: 1.5rem;
+  }
+  /* line 1577, ../scss/_boost-app-custom.scss */
+  body.app div.note-block, body.signup div.note-block {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 58.33333%;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
+  /* line 1586, ../scss/_boost-app-custom.scss */
+  body.app .row.with-logo, body.signup .row.with-logo {
+    margin: 75px auto;
+  }
+  /* line 1590, ../scss/_boost-app-custom.scss */
+  body.app .row.space30, body.signup .row.space30 {
+    padding-top: 30px  !important;
+  }
+  /* line 1594, ../scss/_boost-app-custom.scss */
+  body.app .row.space40, body.signup .row.space40 {
+    padding-top: 40px !important;
+  }
+  /* line 1598, ../scss/_boost-app-custom.scss */
+  body.app .row.space50, body.signup .row.space50 {
+    padding-top: 50px !important;
+  }
+  /* line 1602, ../scss/_boost-app-custom.scss */
+  body.app .row.space50bottom, body.signup .row.space50bottom {
+    padding-bottom: 50px !important;
+  }
+  /* line 1606, ../scss/_boost-app-custom.scss */
+  body.app .row.space70, body.signup .row.space70 {
+    padding-top: 70px !important;
+  }
+  /* line 1610, ../scss/_boost-app-custom.scss */
+  body.app .row.space150, body.signup .row.space150 {
+    padding-top: 150px !important;
+  }
+  /* line 1615, ../scss/_boost-app-custom.scss */
+  body.app div.top-sub-block, body.signup div.top-sub-block {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 83.33333%;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
+  /* line 1619, ../scss/_boost-app-custom.scss */
+  body.app .boost-app-form, body.app .dash-container, body.signup .boost-app-form, body.signup .dash-container {
+    margin-top: 40px;
+  }
+  /* line 1622, ../scss/_boost-app-custom.scss */
+  body.app .boost-app-form.wepay, body.app .dash-container.wepay, body.signup .boost-app-form.wepay, body.signup .dash-container.wepay {
+    margin-top: 70px;
+  }
+  /* line 1625, ../scss/_boost-app-custom.scss */
+  body.app .boost-app-form.wepay div, body.app .dash-container.wepay div, body.signup .boost-app-form.wepay div, body.signup .dash-container.wepay div {
+    padding-top: 20px;
+  }
+  /* line 1666, ../scss/_boost-app-custom.scss */
+  body.app .price-marker + input, body.signup .price-marker + input {
+    padding-left: 42px !important;
+  }
+  /* line 1673, ../scss/_boost-app-custom.scss */
+  body.app h6.subheader, body.signup h6.subheader {
+    font-size: 16px;
+    font-size: 1rem;
+    color: #cb79ae;
+    line-height: 28px;
+  }
+  /* line 1682, ../scss/_boost-app-custom.scss */
+  body.app hr.divider, body.signup hr.divider {
+    height: 4px;
+    border-radius: 2px;
+    border-top: 4px solid #fff;
+    margin: 40px auto;
+    padding: 0;
+    max-width: 50px;
+  }
+  /* Inputs */
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  /* line 1694, ../scss/_boost-app-custom.scss */
+  body.app .boost-app-form input[type="text"], body.app .boost-app-form input[type="number"], body.app .boost-app-form input[type="email"], body.app .boost-app-form input[type="tel"], body.app .boost-app-form input[type="password"], body.app .boost-app-form select, body.signup .boost-app-form input[type="text"], body.signup .boost-app-form input[type="number"], body.signup .boost-app-form input[type="email"], body.signup .boost-app-form input[type="tel"], body.signup .boost-app-form input[type="password"], body.signup .boost-app-form select {
+    line-height: normal;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  .react-tel-input {
+    width: 100% !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    input {
+      border-radius: 0 !important;
+      box-shadow: none !important;
+      border-color: $lightGray !important;
+    }
+  }
+  /* line 1704, ../scss/_boost-app-custom.scss */
+  body.app .boost-app-form.small-inputs input[type="text"], body.app .boost-app-form.small-inputs input[type="number"], body.app .boost-app-form.small-inputs input[type="email"], body.app .boost-app-form.small-inputs input[type="tel"], body.app .boost-app-form.small-inputs input[type="password"], body.app .boost-app-form.small-inputs select, body.signup .boost-app-form.small-inputs input[type="text"], body.signup .boost-app-form.small-inputs input[type="number"], body.signup .boost-app-form.small-inputs input[type="email"], body.signup .boost-app-form.small-inputs input[type="tel"], body.signup .boost-app-form.small-inputs input[type="password"], body.signup .boost-app-form.small-inputs select {
+    height: 60px;
+    font-size: 18px;
+    font-size: 1.125rem;
+    padding-left: 30px;
+    background-color: #fff;
+  }
+  /* line 1710, ../scss/_boost-app-custom.scss */
+  body.app .boost-app-form.small-inputs input[type="text"].price, body.app .boost-app-form.small-inputs input[type="number"].price, body.app .boost-app-form.small-inputs input[type="email"].price, body.app .boost-app-form.small-inputs input[type="tel"].price, body.app .boost-app-form.small-inputs input[type="password"].price, body.app .boost-app-form.small-inputs select.price, body.signup .boost-app-form.small-inputs input[type="text"].price, body.signup .boost-app-form.small-inputs input[type="number"].price, body.signup .boost-app-form.small-inputs input[type="email"].price, body.signup .boost-app-form.small-inputs input[type="tel"].price, body.signup .boost-app-form.small-inputs input[type="password"].price, body.signup .boost-app-form.small-inputs select.price {
+    padding-left: 50px;
+  }
+  /* line 1714, ../scss/_boost-app-custom.scss */
+  body.app .boost-app-form.small-inputs input[type="text"].hashtag, body.app .boost-app-form.small-inputs input[type="number"].hashtag, body.app .boost-app-form.small-inputs input[type="email"].hashtag, body.app .boost-app-form.small-inputs input[type="tel"].hashtag, body.app .boost-app-form.small-inputs input[type="password"].hashtag, body.app .boost-app-form.small-inputs select.hashtag, body.signup .boost-app-form.small-inputs input[type="text"].hashtag, body.signup .boost-app-form.small-inputs input[type="number"].hashtag, body.signup .boost-app-form.small-inputs input[type="email"].hashtag, body.signup .boost-app-form.small-inputs input[type="tel"].hashtag, body.signup .boost-app-form.small-inputs input[type="password"].hashtag, body.signup .boost-app-form.small-inputs select.hashtag {
+    background-color: #444444;
+    color: #fff;
+    font-weight: normal;
+  }
+  /* line 1719, ../scss/_boost-app-custom.scss */
+  body.app .boost-app-form.small-inputs input[type="text"].hashtag::-webkit-input-placeholder, body.app .boost-app-form.small-inputs input[type="number"].hashtag::-webkit-input-placeholder, body.app .boost-app-form.small-inputs input[type="email"].hashtag::-webkit-input-placeholder, body.app .boost-app-form.small-inputs input[type="tel"].hashtag::-webkit-input-placeholder, body.app .boost-app-form.small-inputs input[type="password"].hashtag::-webkit-input-placeholder, body.app .boost-app-form.small-inputs select.hashtag::-webkit-input-placeholder, body.signup .boost-app-form.small-inputs input[type="text"].hashtag::-webkit-input-placeholder, body.signup .boost-app-form.small-inputs input[type="number"].hashtag::-webkit-input-placeholder, body.signup .boost-app-form.small-inputs input[type="email"].hashtag::-webkit-input-placeholder, body.signup .boost-app-form.small-inputs input[type="tel"].hashtag::-webkit-input-placeholder, body.signup .boost-app-form.small-inputs input[type="password"].hashtag::-webkit-input-placeholder, body.signup .boost-app-form.small-inputs select.hashtag::-webkit-input-placeholder {
+    color: #fff;
+    font-weight: normal;
+  }
+  /* line 1724, ../scss/_boost-app-custom.scss */
+  body.app .boost-app-form.small-inputs input[type="text"].hashtag::-moz-placeholder, body.app .boost-app-form.small-inputs input[type="number"].hashtag::-moz-placeholder, body.app .boost-app-form.small-inputs input[type="email"].hashtag::-moz-placeholder, body.app .boost-app-form.small-inputs input[type="tel"].hashtag::-moz-placeholder, body.app .boost-app-form.small-inputs input[type="password"].hashtag::-moz-placeholder, body.app .boost-app-form.small-inputs select.hashtag::-moz-placeholder, body.signup .boost-app-form.small-inputs input[type="text"].hashtag::-moz-placeholder, body.signup .boost-app-form.small-inputs input[type="number"].hashtag::-moz-placeholder, body.signup .boost-app-form.small-inputs input[type="email"].hashtag::-moz-placeholder, body.signup .boost-app-form.small-inputs input[type="tel"].hashtag::-moz-placeholder, body.signup .boost-app-form.small-inputs input[type="password"].hashtag::-moz-placeholder, body.signup .boost-app-form.small-inputs select.hashtag::-moz-placeholder {
+    /* older Firefox*/
+    color: #fff;
+    font-weight: normal;
+  }
+  /* line 1729, ../scss/_boost-app-custom.scss */
+  body.app .boost-app-form.small-inputs input[type="text"].hashtag::-moz-placeholder, body.app .boost-app-form.small-inputs input[type="number"].hashtag::-moz-placeholder, body.app .boost-app-form.small-inputs input[type="email"].hashtag::-moz-placeholder, body.app .boost-app-form.small-inputs input[type="tel"].hashtag::-moz-placeholder, body.app .boost-app-form.small-inputs input[type="password"].hashtag::-moz-placeholder, body.app .boost-app-form.small-inputs select.hashtag::-moz-placeholder, body.signup .boost-app-form.small-inputs input[type="text"].hashtag::-moz-placeholder, body.signup .boost-app-form.small-inputs input[type="number"].hashtag::-moz-placeholder, body.signup .boost-app-form.small-inputs input[type="email"].hashtag::-moz-placeholder, body.signup .boost-app-form.small-inputs input[type="tel"].hashtag::-moz-placeholder, body.signup .boost-app-form.small-inputs input[type="password"].hashtag::-moz-placeholder, body.signup .boost-app-form.small-inputs select.hashtag::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #fff;
+    font-weight: normal;
+  }
+  /* line 1734, ../scss/_boost-app-custom.scss */
+  body.app .boost-app-form.small-inputs input[type="text"].hashtag::-ms-input-placeholder, body.app .boost-app-form.small-inputs input[type="number"].hashtag::-ms-input-placeholder, body.app .boost-app-form.small-inputs input[type="email"].hashtag::-ms-input-placeholder, body.app .boost-app-form.small-inputs input[type="tel"].hashtag::-ms-input-placeholder, body.app .boost-app-form.small-inputs input[type="password"].hashtag::-ms-input-placeholder, body.app .boost-app-form.small-inputs select.hashtag::-ms-input-placeholder, body.signup .boost-app-form.small-inputs input[type="text"].hashtag::-ms-input-placeholder, body.signup .boost-app-form.small-inputs input[type="number"].hashtag::-ms-input-placeholder, body.signup .boost-app-form.small-inputs input[type="email"].hashtag::-ms-input-placeholder, body.signup .boost-app-form.small-inputs input[type="tel"].hashtag::-ms-input-placeholder, body.signup .boost-app-form.small-inputs input[type="password"].hashtag::-ms-input-placeholder, body.signup .boost-app-form.small-inputs select.hashtag::-ms-input-placeholder {
+    color: #fff;
+    font-weight: normal;
+  }
+  /* line 1748, ../scss/_boost-app-custom.scss */
+  body.app .boost-app-form .circle, body.signup .boost-app-form .circle {
+    left: 35px;
+    top: 39px;
+  }
+  /* line 1754, ../scss/_boost-app-custom.scss */
+  body.app .boost-app-form.small-inputs .circle, body.signup .boost-app-form.small-inputs .circle {
+    left: 35px;
+    top: 29px;
+  }
+  /* line 1762, ../scss/_boost-app-custom.scss */
+  body.app .error small.error, body.signup .error small.error {
+    background-image: url("../images/icon-error-alert@2x.png");
+    font-size: 16px;
+    font-size: 1rem;
+    height: 80px;
+    min-width: 170px;
+    background-position: 20px 28px;
+    line-height: 63px;
+    padding-left: 50px;
+  }
+  /* line 1772, ../scss/_boost-app-custom.scss */
+  body.app small.password-match, body.signup small.password-match {
+    background-image: url("../images/icon-checked@2x.png");
+    font-size: 16px;
+    font-size: 1rem;
+    height: 80px;
+    min-width: 170px;
+    background-position: 20px 28px;
+    line-height: 63px;
+    padding-left: 50px;
+  }
+  /* line 1783, ../scss/_boost-app-custom.scss */
+  body.app label ::-webkit-input-placeholder, body.signup label ::-webkit-input-placeholder {
+    color: #aaa;
+    font-weight: 300;
+  }
+  /* line 1788, ../scss/_boost-app-custom.scss */
+  body.app label :-moz-placeholder, body.signup label :-moz-placeholder {
+    /* older Firefox*/
+    color: #aaa;
+    font-weight: 300;
+  }
+  /* line 1793, ../scss/_boost-app-custom.scss */
+  body.app label ::-moz-placeholder, body.signup label ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #aaa;
+    font-weight: 300;
+  }
+  /* line 1798, ../scss/_boost-app-custom.scss */
+  body.app label :-ms-input-placeholder, body.signup label :-ms-input-placeholder {
+    color: #aaa;
+    font-weight: 300;
+  }
+  /* line 1816, ../scss/_boost-app-custom.scss */
+  body.app .fb-button, body.app .email-button, body.signup .fb-button, body.signup .email-button {
+    margin-bottom: 20px !important;
+    display: block;
+    background-position: 25px 25px;
+    text-align: left;
+  }
+  /* line 1823, ../scss/_boost-app-custom.scss */
+  body.app .email-button, body.signup .email-button {
+    background-position: 25px 31px;
+  }
+  /* line 1830, ../scss/_boost-app-custom.scss */
+  body.app div.logo-circle, body.signup div.logo-circle {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 1rem auto;
+    text-indent: -2000px;
+    background: url("../images/boost-mark-gray.png") no-repeat;
+  }
+}
+@media only screen and (min-width: 40.0625em) and (min--moz-device-pixel-ratio: 1.3), only screen and (min-width: 40.0625em) and (-o-min-device-pixel-ratio: 2.6 / 2), only screen and (min-width: 40.0625em) and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-width: 40.0625em) and (min-device-pixel-ratio: 1.3), only screen and (min-width: 40.0625em) and (min-resolution: 1.3dppx) {
+  /* line 1830, ../scss/_boost-app-custom.scss */
+  body.app div.logo-circle, body.signup div.logo-circle {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url("../images/boost-mark-gray@2x.png");
+    background-size: 50px 50px;
+  }
+}
+@media only screen and (min-width: 48.063em) {
+  /* line 1842, ../scss/_boost-app-custom.scss */
+  body.app .half-color-block, body.signup .half-color-block {
+    top: 180px;
+    height: 650px;
+  }
+  /* line 1846, ../scss/_boost-app-custom.scss */
+  body.app .half-color-block.shorty, body.signup .half-color-block.shorty {
+    height: 400px;
+  }
+  /* line 1851, ../scss/_boost-app-custom.scss */
+  body.app .row.product, body.app .row.signup-buttons, body.signup .row.product, body.signup .row.signup-buttons {
+    margin-top: 40px;
+  }
+  /* line 1855, ../scss/_boost-app-custom.scss */
+  body.app .twitter + .circle, body.app .fb + .circle, body.app .instagram + .circle, body.signup .twitter + .circle, body.signup .fb + .circle, body.signup .instagram + .circle {
+    top: 34px !important;
+  }
+  /* line 1859, ../scss/_boost-app-custom.scss */
+  body.app div.footer-btn, body.signup div.footer-btn {
+    box-shadow: none;
+  }
+  /* line 1863, ../scss/_boost-app-custom.scss */
+  body.app .boost-app-form div.button-row, body.signup .boost-app-form div.button-row {
+    padding-bottom: 90px;
+    padding-top: 50px;
+  }
+  /* line 1868, ../scss/_boost-app-custom.scss */
+  body.app a.footer-link, body.signup a.footer-link {
+    color: #fff;
+  }
+  /* line 1872, ../scss/_boost-app-custom.scss */
+  body.app div.footer-btn > .button-row, body.signup div.footer-btn > .button-row {
+    box-shadow: 0px 10px 17px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 10px 17px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 10px 17px 0px rgba(0, 0, 0, 0.1);
+  }
+  /* line 1878, ../scss/_boost-app-custom.scss */
+  body.app .agreement, body.app .button-row, body.signup .agreement, body.signup .button-row {
+    border: 1px #eee solid;
+    border-top: 0px;
+    border-bottom: 0px;
+  }
+  /* line 1884, ../scss/_boost-app-custom.scss */
+  body.app .button-row, body.signup .button-row {
+    border-bottom: 1px;
+  }
+  /* line 1890, ../scss/_boost-app-custom.scss */
+  body.app .prodname, body.signup .prodname {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-size: 1.375rem;
+  }
+  /* line 1897, ../scss/_boost-app-custom.scss */
+  body.app footer, body.signup footer {
+    margin-top: 50px;
+    height: 220px;
+  }
+  /* line 1901, ../scss/_boost-app-custom.scss */
+
+  /* line 1914, ../scss/_boost-app-custom.scss */
+  body.app footer li:last-child, body.signup footer li:last-child {
+    padding-right: 0px;
+  }
+
+  /* line 1926, ../scss/_boost-app-custom.scss */
+  body.app h6.subheader, body.signup h6.subheader {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+  /* line 1930, ../scss/_boost-app-custom.scss */
+  body.app h4, body.signup h4 {
+    font-size: 22px;
+    font-size: 1.375rem;
+  }
+  /* line 1934, ../scss/_boost-app-custom.scss */
+  body.app a:hover, body.signup a:hover {
+    -moz-transition-property: color;
+    -o-transition-property: color;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -moz-transition-duration: 0.25s;
+    -o-transition-duration: 0.25s;
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+  }
+  /* line 1942, ../scss/_boost-app-custom.scss */
+  body.app {
+    padding: 0 0 280px;
+    /* bottom = footer height */
+  }
+  /* line 1946, ../scss/_boost-app-custom.scss */
+  body.app footer, body.app footer div {
+    background-color: $primarybackground;
+  }
+  /* line 1950, ../scss/_boost-app-custom.scss */
+  body.app h5 {
+    font-size: 22px;
+    font-size: 1.375rem;
+  }
+  /* line 1954, ../scss/_boost-app-custom.scss */
+  body.app ul.listed-items-grid {
+    display: block;
+    padding: 0;
+    margin: 0 -15px;
+  }
+  /* line 1957, ../scss/_boost-app-custom.scss */
+  body.app ul.listed-items-grid li .item-bottom {
+    width: 100%;
+    position: absolute;
+  }
+}
+
+/* line 2028, ../scss/_boost-app-custom.scss */
+body.app .reveal-modal:not(.gray-bg) .row {
+  background-color: #fff;
+}
+@media only screen and (min-width: 64.0625em) {
+  /* line 2035, ../scss/_boost-app-custom.scss */
+  body.app table.payment-info {
+    position: absolute !important;
+    left: -30px;
+    top: 220px;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 769px) {
+  /* line 2044, ../scss/_boost-app-custom.scss */
+  body.app ul.listed-items-grid {
+    display: block;
+    padding: 0;
+    margin: 0 -0.625rem;
+  }
+}
+
+.phone.button.primary {
+  width: 100%;
+  background-color: #921a68;
+  border-color: #751553;
+}
+
+.small-inputs .react-tel-input input.form-control {
+  padding-left: 48px !important;
+}
+
+/* top bar
+
+@include exports("top-bar") {
+
+  @if $include-html-top-bar-classes {
+
+    // Used to provide media query values for javascript components.
+    // This class is generated despite the value of $include-html-top-bar-classes
+    // to ensure width calculations work correctly.
+    meta.foundation-mq-topbar {
+      font-family: "/" + unquote($topbar-media-query) + "/";
+      width: $topbar-breakpoint;
+    }
+
+    /* Wrapped around .top-bar to contain to grid width */
+    .contain-to-grid {
+      width: 100%;
+      background: transparent;
+
+      .top-bar {
+        margin-bottom: $topbar-margin-bottom;
+        padding: rem-calc(2) 0;
+        margin: 0 auto;
+        max-width: $row-width;
+        overflow: hidden;
+      }
+    }
+
+    // Wrapped around .top-bar to make it stick to the top
+    // .fixed {
+    //   position: fixed;
+    //   top: 0;
+    //   width: 100%;
+    //   z-index: 99;
+    //   #{$default-float}: 0;
+
+    //   &.expanded:not(.top-bar) {
+    //     height: auto;
+    //     max-height: 100%;
+    //     overflow-y: auto;
+    //     width: 100%;
+
+    //     .title-area {
+    //       position: fixed;
+    //       width: 100%;
+    //       z-index: 99;
+    //     }
+
+    //     // Ensure you can scroll the menu on small screens
+    //     .top-bar-section {
+    //       margin-top: $topbar-height;
+    //       z-index: 98;
+    //     }
+    //   }
+    // }
+
+    .top-bar {
+      background: transparent;
+      height: $topbar-height;
+      line-height: $topbar-height;
+      margin-bottom: $topbar-margin-bottom;
+      // overflow: hidden;
+      position: relative;
+
+      // Topbar Global list Styles
+      ul {
+        list-style: none;
+        margin-bottom: 0;
+      }
+
+      .row {
+        max-width: none;
+      }
+
+      form,
+      input,
+      select {
+        margin-bottom: 0;
+      }
+
+      input,
+      select {
+        font-size: $topbar-button-font-size;
+        height: $topbar-input-height;
+        padding-bottom: .35rem;
+        padding-top: .35rem;
+      }
+
+      .button, button {
+        font-size: $topbar-button-font-size;
+        margin-bottom: 0;
+        padding-bottom: .35rem + rem-calc(1);
+        padding-top: .35rem + rem-calc(1);
+        // position: relative;
+        // top: -1px;
+
+        // Corrects a slight misalignment when put next to an input field
+        @media #{$small-only} {
+          position: relative;
+          top: -1px;
+        }
+      }
+
+      // Title Area
+      .title-area {
+        margin: 0;
+        position: absolute;
+        float: $default-float;
+      }
+
+      .name {
+        font-size: $rem-base;
+        height: $topbar-height;
+        margin: 0;
+
+        h1, h2, h3, h4, p, span {
+          font-size: $topbar-title-font-size;
+          line-height: $topbar-height;
+          margin: 0;
+
+          a {
+            color: $topbar-link-color;
+            display: block;
+            font-weight: $topbar-title-weight;
+            padding: 0 $topbar-link-padding;
+            width: 75%;
+          }
+        }
+      }
+    }
+
+    // Right and Left Navigation that stacked by default
+    .top-bar-section {
+      #{$default-float}: 0;
+      position: relative;
+      width: auto;
+      @include single-transition($default-float, $topbar-transition-speed);
+
+      .divider,
+      [role="separator"] {
+        border-top: $topbar-divider-border-top;
+        clear: both;
+        height: 1px;
+        width: 100%;
+      }
+
+      ul {
+        display: inline;
+        height: auto !important;
+        width: auto;
+        margin-right: .5rem;
+
+        li {
+          float: $default-float;
+          .js-generated { display: none; }
+        }
+      }
+
+      ul li {
+
+        > a {
+          color: $topbar-link-color;
+          display: inline;
+          font-family: $topbar-link-font-family;
+          font-size: $topbar-link-font-size;
+          font-weight: $topbar-link-weight;
+          // padding-#{$default-float}: $topbar-link-padding;
+          // padding: 12px 0 12px $topbar-link-padding;
+          text-transform: $topbar-link-text-transform;
+          width: 100%;
+          line-height: $topbar-height;
+          padding: 1.2rem $topbar-link-padding;
+
+          &.button {
+            font-size: $topbar-link-font-size;
+            padding-#{$default-float}: $topbar-link-padding;
+            padding-#{$opposite-direction}: $topbar-link-padding;
+            @include button-style($bg:$primary-color);
+          }
+
+
+
+          &.button.secondary { @include button-style($bg:$secondary-color); }
+          &.button.success { @include button-style($bg:$success-color); }
+          &.button.alert { @include button-style($bg:$alert-color); }
+          &.button.warning { @include button-style($bg:$warning-color); }
+          &.button.info { @include button-style($bg:$info-color); }
+        }
+
+        > button {
+          font-size: $topbar-link-font-size;
+          padding-#{$default-float}: $topbar-link-padding;
+          padding-#{$opposite-direction}: $topbar-link-padding;
+          @include button-style($bg:$primary-color);
+
+          &.secondary { @include button-style($bg:$secondary-color); }
+          &.success { @include button-style($bg:$success-color); }
+          &.alert { @include button-style($bg:$alert-color); }
+          &.warning { @include button-style($bg:$warning-color); }
+          &.info { @include button-style($bg:$info-color); }
+        }
+
+        // Apply the hover link color when it has that class
+        &:hover:not(.has-form) > a {
+
+          color: $topbar-link-color-hover;
+        }
+
+        // Apply the active link color when it has that class
+        &.active > a {
+          border-bottom: 4px solid #942875;
+
+          &:hover {
+            color: $topbar-link-color-active-hover;
+          }
+        }
+      }
+
+      // Add some extra padding for list items contains buttons
+      .has-form {
+        padding: $topbar-link-padding;
+      }
+
+    }
+
+    .js-generated { display: block; }
+
+// font overrides
+
+h1, h2, h3, h4, h5, h6, p, span, body, input, select {
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif !important;
+}
+
+// checklist
+
+.checklist {
+  margin-bottom: 2rem;
+  ul {
+    padding-left: 40px;
+    list-style: none;
+    text-indent: -20px;
+    line-height: 1em;
+    > li {
+      margin-bottom: .5rem;
+    }
+  }
+
+  i {
+    margin-right: 1rem;
+    color: $mediumGray;
+  }
+  a {
+    color: $darkPurple;
+  }
+  .complete {
+    i {
+      color: $green;
+    }
+    a {
+      color: $darkGray;
+    }
+    text-decoration: line-through;
+  }
+  h3 {
+    color: $darkGray;
+    text-align: left;
+    font-size: 24px;
+    padding-left: 1.1rem;
+  }
+
+}
+
+.checkout-form {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 62.5rem;
+
+  .checkout-top {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .form-container {
+    width: 100%;
+    min-width: 300px;
+    max-width: 500px;
+
+    form {
+      padding: 0 !important;
+    }
+    .boost-app-form {
+      margin-top: 0;
+    }
+  }
+  .form-padding {
+    padding: 0 2rem;
+  }
+
+  @media #{$large-up} {
+    display: flex;
+    margin: 0 auto;
+    .checkout-top {
+      margin-right: 1em;
+      flex: 2;
+    }
+    .form-container {
+      max-width: inherit;
+      flex: 1;
+      margin-right: 1em;
+    }
+    .price-supplemental {
+      display: block !important;
+    }
+    .product-image {
+      min-width: 500px;
+    }
+  }
+}
+
+.product-image {
+  display: block;
+  position: relative;
+  width: 100%;
+  min-height: 250px;
+  min-width: 250px;
+  max-width: 500px;
+  max-height: 500px;
+  overflow: hidden;
+  background-size: cover;
+  @media #{$medium-up} {
+    margin-top: 1em;
+  }
+}
+
+.price-container {
+  padding: 1em;
+  padding-bottom: 0;
+  &.collapsed {
+    .price-supplemental {
+      display: none;
+    }
+  }
+  .price-supplemental {
+    margin-bottom: 1em;
+  }
+}
+
+.product-caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  line-height: 1.2em;
+  background: rgba(0, 0, 0, .8);
+  color: $white;
+
+  .product-caption-title {
+    color: $white;
+    width: 85%;
+  }
+
+  .expander {
+    position: absolute;
+    right: .5em;
+    bottom: .5em;
+    height: 34px;
+    width: 34px;
+    line-height: 34px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, .2);
+    text-align: center;
+    border-radius: 1000px;
+    &:hover {
+      background: $white;
+      color: $darkGray;
+    }
+  }
+
+  .product-description {
+    margin-top: 1em;
+    -webkit-font-smoothing: antialiased;
+    width: 85%;
+
+  }
+  &.collapsed {
+      height: auto;
+      background: rgba(0, 0, 0, .4);
+      .product-description {
+        display: none;
+      }
+    }
+}
+
+.header-blurb {
+  padding-top: 1.4rem;
+  margin-right: 1rem;
+  line-height: 1em;
+  text-align: right;
+  color: lighten($darkGray, 40%);
+  font-size: .8rem;
+  .brand-title {
+    color: $darkGray;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  a {
+    color: $accentPurple;
+  }
+}
+
+.product-photo-small {
+  width: 150px;
+  height: 100%;
+}
+
+.receipt {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  .receipt-header {
+    display: block;
+    padding: 0 1rem;
+    img {
+      margin-right: 1em;
+      margin-bottom: 1em;
+    }
+    h3 {
+      color: $darkGray;
+      text-align: left;
+      font-weight: normal;
+      font-size: 16px !important;
+      text-transform: capitalize;
+    }
+    p {
+      margin-bottom: 0px;
+    }
+  }
+  h1 {
+    margin: 0 0 2rem 1rem;
+    font-size: 28px !important;
+    font-weight: normal;
+    text-align: left;
+  }
+}
+
+.banner {
+  margin-bottom: 1.5rem;
+  padding: .5rem 1rem;
+  color: $white;
+  background-color: $accentPurple;
+  i {
+    float: right;
+    padding-top: 5px;
+  }
+  @media #{$medium-up} {
+    margin-top: 2rem;
+  }
+}
+
+.top-nav-bar.stepped-nav {
+  .top-bar {
+    // background-color: rgba(255, 255, 255, .8);
+    align-items: stretch;
+    display: flex;
+    justify-content: space-around;
+    .logo {
+      flex-basis: 220px;
+    }
+    .logo .header-circle {
+      min-width: 26px;
+      width: 5%;
+      margin: 0 .5rem 0 1rem;
+    }
+    .logo .header-tag {
+      display: none;
+      min-width: 105px;
+      width: 60%;
+      @media #{$medium-up} {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.header.small {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.header.small h1{
+  font-size: 32px !important;
+  line-height: 1em !important;
+  .deemphasize {
+    color: $accentPurple;
+  }
+}
+
+.form-container.seller {
+  padding: 0 !important;
+  .signup-form {
+    padding: 1rem 2rem;
+    .form-padding {
+      padding: 1rem 2rem;
+    }
+  }
+  .form-control  {
+    padding-left: 0px !important;
+    font-weight: normal;
+    color: $accentPurple;
+    &::-webkit-input-placeholder {
+      color: rgba(0,0,0, .5);
+    }
+    &[type='submit'] {
+      color: white;
+    }
+  }
+  .helper-text {
+    text-align: left;
+    color: $darkGray;
+  }
+  h2 {
+    color: $darkGray;
+    font-size: 24px;
+    font-weight: normal;
+    margin: 1em 0 0 0;
+    text-align: left;
+  }
+}
+
+.hashtag-breakdown {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 2rem 0;
+  .hash {
+    color: $accentPurple;
+    text-align: left;
+    &.hash-unique {
+      color: rgba(0,0,0,.3);
+    }
+  }
+  .hash-header {
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 10px;
+    letter-spacing: 1px;
+    line-height: 1em;
+    height: 2em;
+  }
+  .hashtag {
+    font-size: 10vw;
+    line-height: 1em;
+    padding-right: 10px;
+    @media #{$medium-up} {
+      font-size: 4.2em;
+    }
+  }
+}
+
+.hashtag-caption {
+  margin: 1.5rem 2rem 2rem 2rem;
+  font-size: 14px;
+  line-height: 1em;
+  color: lighten($darkGray, 30%);
+  text-transform: lowercase;
+  text-align: center;
+}
+
+.steps {
+  display: flex;
+  align-items: stretch;
+  counter-reset: section;
+  margin-right: 1rem;
+  &.form-step {
+    margin: 0;
+    justify-content: center;
+    li {
+      font-size: 24px;
+      margin: 1rem 0 0 0;
+      padding-top: 0;
+      opacity: .3;
+      &.on, &.complete {
+        opacity: 1;
+      }
+      &.complete {
+        color: $darkaccent;
+      }
+    }
+  }
+  li {
+    padding: .8rem;
+    line-height: 1rem;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    i {
+      height: 26px;
+      min-width: 26px;
+      text-align: center;
+      color: $mediumGray;
+      font-size: 12px;
+      -webkit-font-smoothing: antialiased;
+      border: 2px solid $mediumGray;
+      border-radius: 2rem;
+      &::before {
+        counter-increment: section;
+        content: counter(section);
+        font-style: normal;
+        line-height: 24px;
+      }
+    }
+    &.complete i {
+      background-color: $darkaccent;
+      border-color: $darkaccent;
+      color: $white;
+      @extend .fa;
+      @extend .fa-check;
+      font-size: 12px;
+      line-height: 22px;
+    }
+    &.on {
+      border-bottom: 2px solid $accentPurple;
+      i {
+        color: $accentPurple;
+        border-color: $accentPurple;
+      }
+    }
+    .step-label {
+      display: none;
+      margin-left: .5rem;
+      @media #{$medium-up} {
+        display: block !important;
+      }
+    }
+  }
+}
+
+.status-badge {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 6em;
+  height: 6em;
+  margin-right: 1em;
+  border-radius: 500px;
+  font-size: .6em;
+  color: white;
+  line-height: 1em;
+  overflow: hidden;
+  background-color: #F5A623;
+  i {
+    margin-top: -.2em;
+    padding-bottom: .2em;
+    font-size: 1.5em;
+    opacity: .5;
+  }
+  &.status-badge-success {
+    background-color: $darkaccent;
+  }
+}
+.form-footer {
+  padding: 2em;
+  text-align: center;
+  background-color: lighten($lightGray, 5%);
+  h2 {
+    margin-top: .5em !important;
+    text-align: center !important;
+  }
+}
+
+.help-photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  display: inline-block;
+  overflow: hidden;
+}
+.help-photo + .help-photo {
+  margin-left: -1em;
+}
+
+.button-secondary {
+  background-color: transparent;
+  color: $accentPurple;
+  border: 1px solid $accentPurple;
+}
+.button-success {
+  background-color: $darkaccent;
+  &:hover {
+    background-color: $darkaccent;
+    cursor: default;
+  }
+}
+
+.large-icon {
+  margin-bottom: 1rem;
+  align-self: center;
+  display: inline-block;
+  font-size: 50px;
+  text-align: center;
+  padding-right: 1rem;
+}
+
+.dashboard-item {
+  .helper-text {
+    margin-top: 0;
+  }
+  .large-icon {
+    flex-shrink: 0;
+    width: 70px;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.dashboard {
+  max-width: 84.5em !important;
+  text-align: center;
+  .form-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    min-width: inherit;
+  }
+  .dashboard-section {
+    padding: 2rem 2rem 1rem;
+  }
+  .dashboard-section+.dashboard-section {
+    border-top: 1px solid $lightGray;
+  }
+
+  .helper-text {
+    color: $darkGray;
+    text-align: left;
+    margin: 0 0 2rem 0;
+  }
+
+  h2 {
+    margin-bottom: 1rem !important;
+    font-size: 1.2em !important;
+    font-weight: normal;
+    line-height: 1em;
+    color: $darkGray;
+  }
+
+  h3 {
+    font-size: 1em;
+    text-align: left;
+    font-weight: normal;
+    color: $darkGray;
+  }
+}
+
+.menu-overlay {
+  position: absolute;
+  border-radius: .5rem;
+  padding: 1rem;
+  width: 300px;
+  background-color: $white;
+  box-shadow: 0 0 40px rgba(0,0,0,.3);
+  right: -1.5rem;
+  z-index: 10000;
+  .form-button {
+    margin-top: 1rem;
+  }
+  &.wide {
+    width: 600px;
+  }
+  h6 {
+    margin-top: 0;
+  }
+  .field {
+    padding-left: 0px;
+  }
+  textarea {
+    font-weight: 300;
+    font-size: 16px;
+  }
+}
+
+.modal {
+  @extend .menu-overlay;
+  display: block;
+  position: relative;
+  margin: 2rem auto;
+  right: inherit;
+  width: 90%;
+  max-width: 600px;
+  .field {
+    margin-bottom: 1rem !important;
+    color: $accentPurple;
+  }
+  .field::-webkit-input-placeholder {
+    color: $mediumGray !important;
+  }
+  .field::-moz-placeholder {
+    color: $mediumGray !important;
+  }
+  .field:-ms-input-placeholder {
+    color: $mediumGray !important;
+  }
+
+}
+.modal-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.7);
+  z-index: 50000;
+  a {
+    color: $accentPurple;
+    font-weight: 300;
+  }
+}
+
+h6 + .form-container {
+  padding-bottom: 0 !important;
+}
+
+h6.success {
+  color: $darkaccent;
+}
+span.currency::before {
+  content: '$';
+  padding: 13px 0;
+  color: $accentPurple;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+}
+input.currency {
+  padding-left: 13px !important;
+}
+
+.seller-logout {
+    padding-left: 20px;
+    a {
+    color: $darkGray !important;
+  }
+}
+#apple-pay-button {
+   display: block;
+   background-color: black;
+   background-image: -webkit-named-image(apple-pay-logo-white);
+   background-size: 100% 100%;
+   background-origin: content-box;
+   background-repeat: no-repeat;
+   width: 100%;
+   height: 44px;
+   padding: 10px 0;
+   border-radius: 10px;
+ }

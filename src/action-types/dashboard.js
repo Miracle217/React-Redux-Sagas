@@ -1,0 +1,18 @@
+import mapActions from 'helpers/mapActions';
+
+export default mapActions([
+  'ADD_CARD_MODAL',
+  'EDIT_CARD_MODAL',
+  'CLEAR_MODALS',
+  'SUBMIT_PHONE',
+  'CONFIRM_CODE',
+  'INSTAGRAM_CONNECT',
+  'REMOVE_INSTAGRAM',
+  'TWITTER_CONNECT',
+  'REMOVE_TWITTER',
+  'SUBMIT_ADDRESS',
+  'SUBMIT_EMAIL',
+  'SUBMIT_PAYMENT',
+  'REMOVE_PAYMENT',
+  'UPDATE_PAYMENT'
+], 'DASHBOARD');

@@ -1,0 +1,50 @@
+/* FONT FAMILIES */
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/Open-Sans-300/Open-Sans-300.eot");
+  src: url("../fonts/Open-Sans-300/Open-Sans-300.eot?#iefix") format("embedded-opentype"), local("Open Sans Light"), local("Open-Sans-300"), url("../fonts/Open-Sans-300/Open-Sans-300.woff2") format("woff2"), url("../fonts/Open-Sans-300/Open-Sans-300.woff") format("woff"), url("../fonts/Open-Sans-300/Open-Sans-300.ttf") format("truetype"), url("../fonts/Open-Sans-300/Open-Sans-300.svg#OpenSans") format("svg");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Open-Sans-regular/Open-Sans-regular.eot");
+  src: url("../fonts/Open-Sans-regular/Open-Sans-regular.eot?#iefix") format("embedded-opentype"), local("Open Sans"), local("Open-Sans-regular"), url("../fonts/Open-Sans-regular/Open-Sans-regular.woff2") format("woff2"), url("../fonts/Open-Sans-regular/Open-Sans-regular.woff") format("woff"), url("../fonts/Open-Sans-regular/Open-Sans-regular.ttf") format("truetype"), url("../fonts/Open-Sans-regular/Open-Sans-regular.svg#OpenSans") format("svg");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/Open-Sans-700/Open-Sans-700.eot");
+  src: url("../fonts/Open-Sans-700/Open-Sans-700.eot?#iefix") format("embedded-opentype"), local("Open Sans Bold"), local("Open-Sans-700"), url("../fonts/Open-Sans-700/Open-Sans-700.woff2") format("woff2"), url("../fonts/Open-Sans-700/Open-Sans-700.woff") format("woff"), url("../fonts/Open-Sans-700/Open-Sans-700.ttf") format("truetype"), url("../fonts/Open-Sans-700/Open-Sans-700.svg#OpenSans") format("svg");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-style: italic;
+  src: url("../fonts/Open-Sans-300italic/Open-Sans-300italic.eot");
+  src: url("../fonts/Open-Sans-300italic/Open-Sans-300italic.eot?#iefix") format("embedded-opentype"), local("Open Sans Light Italic"), local("Open-Sans-300italic"), url("../fonts/Open-Sans-300italic/Open-Sans-300italic.woff2") format("woff2"), url("../fonts/Open-Sans-300italic/Open-Sans-300italic.woff") format("woff"), url("../fonts/Open-Sans-300italic/Open-Sans-300italic.ttf") format("truetype"), url("../fonts/Open-Sans-300italic/Open-Sans-300italic.svg#OpenSans") format("svg");
+}
+
+@font-face{
+font-family:"Proxima Nova";
+font-weight: 300;
+src:url("../fonts/1539042/4d54327f-d317-4d88-bdac-1edbd6f9b677.eot?#iefix");
+src:url("../fonts/1539042/4d54327f-d317-4d88-bdac-1edbd6f9b677.eot?#iefix") format("eot"),url("../fonts/1539042/1bfff5fb-2540-4d1d-9f13-0afec7ba3c41.woff2") format("woff2"),url("../fonts/1539042/be2bfc33-e5c3-4b44-9c4d-3f1249e26a5a.woff") format("woff"),url("../fonts/1539042/a46943c3-227c-44d3-aa50-e5f87f7cec12.ttf") format("truetype");
+}
+@font-face{
+font-family:"Proxima Nova";
+font-weight: 400;
+src:url("../fonts/1539044/04b51238-e986-4565-a16d-5bff2a5d676c.eot?#iefix");
+src:url("../fonts/1539044/04b51238-e986-4565-a16d-5bff2a5d676c.eot?#iefix") format("eot"),url("../fonts/1539044/53b0f583-1678-4d9f-8b22-3092a6da1163.woff2") format("woff2"),url("../fonts/1539044/8055f2d1-51bc-4057-b927-e8b7d40d1fe5.woff") format("woff"),url("../fonts/1539044/905555c5-adce-4189-8bd7-58f6f6ddadfd.ttf") format("truetype");
+}
+@font-face{
+font-family:"Proxima Nova";
+font-weight: 700;
+src:url("../fonts/1539058/f358a1e4-dd9c-4ce1-afbf-bbef9c47aea5.eot?#iefix");
+src:url("../fonts/1539058/f358a1e4-dd9c-4ce1-afbf-bbef9c47aea5.eot?#iefix") format("eot"),url("../fonts/1539058/f6be7c2c-f5b8-4a8b-9060-cb0780a90515.woff2") format("woff2"),url("../fonts/1539058/f17bb084-2cf8-4879-8af9-8664ba738cc1.woff") format("woff"),url("../fonts/1539058/77574227-edba-4633-abbc-132a80e8c585.ttf") format("truetype");
+}
+
+/* This CSS resource incorporates links to font software which is the valuable copyrighted property of Monotype and/or its suppliers. You may not attempt to copy, install, redistribute, convert, modify or reverse engineer this font software. Please contact Monotype with any questions regarding Web Fonts: http://www.fontshop.com */
